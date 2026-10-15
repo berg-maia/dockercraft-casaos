@@ -1,0 +1,86 @@
+name: Sincronizar ícones
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'   # toda segunda-feira
+
+permissions:
+  contents: write
+
+concurrency:
+  group: store-commit
+
+jobs:
+  icons:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Copiar o ícone oficial de cada app para Apps/<Nome>/icon.svg
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import glob
+          import json
+          import os
+          import re
+          import subprocess
+
+          def gh(*args):
+              return subprocess.run(["gh", *args], capture_output=True)
+
+          falhas = []
+          for f in sorted(glob.glob("Apps/*/docker-compose.yml")):
+              folder = f.split("/")[1]
+              text = open(f, encoding="utf-8").read()
+              m = re.search(r'^  repo: "?https://github\.com/([\w.-]+/[\w.-]+?)"?\s*$', text, re.M)
+              if not m:
+                  falhas.append(f"{folder}: sem 'repo:' no compose")
+                  continue
+              repo = m.group(1)
+              slug = repo.split("/")[1]
+
+              r = gh("api", f"repos/{repo}/contents/assets/app-icon")
+              if r.returncode != 0:
+                  falhas.append(f"{folder}: nao achei assets/app-icon em {repo}")
+                  continue
+              items = json.loads(r.stdout)
+              svgs = [i["name"] for i in items if i.get("type") == "file" and i["name"].lower().endswith(".svg")]
+              if not svgs:
+                  nomes = ", ".join(i["name"] for i in items)
+                  falhas.append(f"{folder}: nenhum .svg em assets/app-icon (tem: {nomes})")
+                  continue
+              pick = next((n for n in svgs if n.lower() == f"{slug}.svg"), None) or sorted(svgs)[0]
+
+              d = gh("api", "-H", "Accept: application/vnd.github.raw+json",
+                     f"repos/{repo}/contents/assets/app-icon/{pick}")
+              if d.returncode != 0 or b"<svg" not in d.stdout[:4000]:
+                  falhas.append(f"{folder}: {pick} nao veio como SVG valido")
+                  continue
+
+              dest = f"Apps/{folder}/icon.svg"
+              antigo = open(dest, "rb").read() if os.path.exists(dest) else None
+              if antigo == d.stdout:
+                  print(f"[{folder}] {pick}: ja esta igual")
+              else:
+                  open(dest, "wb").write(d.stdout)
+                  print(f"[{folder}] {pick} -> {dest} ({len(d.stdout)//1024} KB)")
+
+          for x in falhas:
+              print(f"::warning::{x}")
+          PY
+
+      - name: Commit
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add Apps
+            git commit -m "chore: sincronizar ícones oficiais"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          else
+            echo "Nenhum ícone mudou."
+          fi
