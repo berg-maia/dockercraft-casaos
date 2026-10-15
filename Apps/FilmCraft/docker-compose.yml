@@ -54,11 +54,10 @@ x-casaos:
     sv_SE: "Videoredigering, färg och ljud; en open source-reimplementering av Adobe Premiere Pro enligt clean-room-metoden, omskriven i rent Rust."
     uk_UA: "Відеомонтаж, колір і звук; відкрита clean-room-реімплементація Adobe Premiere Pro, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/icon.svg
-  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
-  # screenshot_link:
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-1.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-2.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-3.webp
+  screenshot_link:
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-1.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-2.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-3.png
   website: https://getartcraft.com/apps/filmcraft
   repo: https://github.com/storytold/filmcraft
   support: https://github.com/storytold/filmcraft/issues
