@@ -55,9 +55,9 @@ x-casaos:
     uk_UA: "Векторна ілюстрація; відкрита clean-room-реімплементація Adobe Illustrator, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/icon.svg
   screenshot_link:
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-1.webp
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-2.webp
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-3.webp
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-1.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-2.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-3.png
   website: https://getartcraft.com/apps/vectorcraft
   repo: https://github.com/storytold/vectorcraft
   support: https://github.com/storytold/vectorcraft/issues
