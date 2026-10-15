@@ -53,7 +53,7 @@ x-casaos:
     pt_BR: "Projeto e desenho assistidos por computador; uma reimplementação open source, em clean-room, do Autodesk AutoCAD, reconstruída em Rust puro."
     sv_SE: "Datorstödd konstruktion och ritning; en open source-reimplementering av Autodesk AutoCAD enligt clean-room-metoden, omskriven i rent Rust."
     uk_UA: "Автоматизоване проєктування та креслення; відкрита clean-room-реімплементація Autodesk AutoCAD, заново написана на чистому Rust."
-  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/icon.svg
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/icon.png
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:
   #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/screenshot-1.webp
