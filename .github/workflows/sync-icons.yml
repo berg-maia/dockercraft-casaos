@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Copiar o ícone oficial de cada app para Apps/<Nome>/icon.svg
+      - name: Copiar o ícone oficial de cada app para Apps/<Nome>/icon.*
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -31,6 +31,38 @@ jobs:
           def gh(*args):
               return subprocess.run(["gh", *args], capture_output=True)
 
+          def listar(repo, caminho, prof=0):
+              """Arquivos de uma pasta e das subpastas (ate 4 niveis)."""
+              r = gh("api", f"repos/{repo}/contents/{caminho}")
+              if r.returncode != 0:
+                  return None
+              arquivos = []
+              for i in json.loads(r.stdout):
+                  if i.get("type") == "file":
+                      arquivos.append(i["path"])
+                  elif i.get("type") == "dir" and prof < 3:
+                      arquivos += listar(repo, i["path"], prof + 1) or []
+              return arquivos
+
+          def tamanho(caminho):
+              nums = [int(n) for n in re.findall(r"\d{2,4}", caminho.lower()) if 16 <= int(n) <= 4096]
+              return max(nums) if nums else 0
+
+          def escolher(arquivos, slug):
+              """Prefere SVG; sem SVG, o menor PNG com 256 px ou mais (senao o maior)."""
+              base = "assets/app-icon/"
+              svgs = [a for a in arquivos if a.lower().endswith(".svg")]
+              if svgs:
+                  exato = [a for a in svgs if a.lower() == f"{base}{slug}.svg"]
+                  raiz = sorted(a for a in svgs if a.count("/") == 2)
+                  escalavel = sorted(a for a in svgs if "scalable" in a.lower())
+                  return (exato or raiz or escalavel or sorted(svgs))[0], "svg"
+              pngs = [a for a in arquivos if a.lower().endswith(".png") and "macos" not in a.lower()]
+              if pngs:
+                  grandes = sorted((tamanho(a), a) for a in pngs if tamanho(a) >= 256)
+                  return (grandes[0][1] if grandes else max(pngs, key=tamanho)), "png"
+              return None, None
+
           falhas = []
           for f in sorted(glob.glob("Apps/*/docker-compose.yml")):
               folder = f.split("/")[1]
@@ -42,31 +74,36 @@ jobs:
               repo = m.group(1)
               slug = repo.split("/")[1]
 
-              r = gh("api", f"repos/{repo}/contents/assets/app-icon")
-              if r.returncode != 0:
+              arquivos = listar(repo, "assets/app-icon")
+              if arquivos is None:
                   falhas.append(f"{folder}: nao achei assets/app-icon em {repo}")
                   continue
-              items = json.loads(r.stdout)
-              svgs = [i["name"] for i in items if i.get("type") == "file" and i["name"].lower().endswith(".svg")]
-              if not svgs:
-                  nomes = ", ".join(i["name"] for i in items)
-                  falhas.append(f"{folder}: nenhum .svg em assets/app-icon (tem: {nomes})")
-                  continue
-              pick = next((n for n in svgs if n.lower() == f"{slug}.svg"), None) or sorted(svgs)[0]
-
-              d = gh("api", "-H", "Accept: application/vnd.github.raw+json",
-                     f"repos/{repo}/contents/assets/app-icon/{pick}")
-              if d.returncode != 0 or b"<svg" not in d.stdout[:4000]:
-                  falhas.append(f"{folder}: {pick} nao veio como SVG valido")
+              pick, ext = escolher(arquivos, slug)
+              if not pick:
+                  falhas.append(f"{folder}: nenhum SVG ou PNG utilizavel (tem: {', '.join(arquivos)})")
                   continue
 
-              dest = f"Apps/{folder}/icon.svg"
+              d = gh("api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{repo}/contents/{pick}")
+              ok = d.returncode == 0 and (
+                  b"<svg" in d.stdout[:4000] if ext == "svg" else d.stdout[:4] == b"\x89PNG")
+              if not ok:
+                  falhas.append(f"{folder}: {pick} nao veio como {ext.upper()} valido")
+                  continue
+
+              dest = f"Apps/{folder}/icon.{ext}"
               antigo = open(dest, "rb").read() if os.path.exists(dest) else None
               if antigo == d.stdout:
                   print(f"[{folder}] {pick}: ja esta igual")
               else:
                   open(dest, "wb").write(d.stdout)
                   print(f"[{folder}] {pick} -> {dest} ({len(d.stdout)//1024} KB)")
+
+              # o compose precisa apontar para a extensao escolhida
+              novo = re.sub(r"^(  icon: .*?/icon)\.\w+$", lambda mm: f"{mm.group(1)}.{ext}",
+                            text, count=1, flags=re.M)
+              if novo != text:
+                  open(f, "w", encoding="utf-8", newline="\n").write(novo)
+                  print(f"[{folder}] compose agora usa icon.{ext}")
 
           for x in falhas:
               print(f"::warning::{x}")
