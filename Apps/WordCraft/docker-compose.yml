@@ -20,39 +20,39 @@ x-casaos:
     - amd64
     - arm64
   main: wordcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Productivity
   title:
     en_US: WordCraft
   tagline:
-    en_US: "Word processing"
-    zh_CN: "文字处理"
-    ar_SA: "معالجة النصوص"
-    de_DE: "Textverarbeitung"
-    es_ES: "Procesamiento de textos"
-    fr_FR: "Traitement de texte"
-    hu_HU: "Szövegszerkesztés"
-    it_IT: "Elaborazione di testi"
-    ru_RU: "Текстовый процессор"
-    pl_PL: "Edytor tekstu"
-    pt_BR: "Processamento de texto"
-    sv_SE: "Ordbehandling"
-    uk_UA: "Текстовий процесор"
+    en_US: "Writing and document design"
+    zh_CN: "写作与文档设计"
+    ar_SA: "الكتابة وتصميم المستندات"
+    de_DE: "Schreiben und Dokumentgestaltung"
+    es_ES: "Escritura y diseño de documentos"
+    fr_FR: "Rédaction et mise en forme de documents"
+    hu_HU: "Írás és dokumentumtervezés"
+    it_IT: "Scrittura e progettazione di documenti"
+    ru_RU: "Тексты и оформление документов"
+    pl_PL: "Pisanie i projektowanie dokumentów"
+    pt_BR: "Escrita e design de documentos"
+    sv_SE: "Skrivande och dokumentdesign"
+    uk_UA: "Тексти та оформлення документів"
   description:
-    en_US: "Word processing. A free alternative to Microsoft Word that runs entirely in your browser using WebAssembly."
-    zh_CN: "文字处理。Microsoft Word 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "معالجة النصوص. بديل مجاني لبرنامج Microsoft Word يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Textverarbeitung. Eine kostenlose Alternative zu Microsoft Word, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Procesamiento de textos. Una alternativa gratuita a Microsoft Word que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Traitement de texte. Une alternative gratuite à Microsoft Word qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Szövegszerkesztés. Ingyenes alternatíva (Microsoft Word helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Elaborazione di testi. Un'alternativa gratuita a Microsoft Word che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Текстовый процессор. Бесплатная альтернатива Microsoft Word, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Edytor tekstu. Darmowa alternatywa dla Microsoft Word, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Processamento de texto. Uma alternativa gratuita ao Microsoft Word que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Ordbehandling. Ett gratis alternativ till Microsoft Word som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Текстовий процесор. Безкоштовна альтернатива Microsoft Word, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Writing and document design; an open-source, clean-room reimplementation of Microsoft Word, rebuilt in pure Rust."
+    zh_CN: "写作与文档设计；Microsoft Word 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "الكتابة وتصميم المستندات؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Microsoft Word، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Schreiben und Dokumentgestaltung; eine quelloffene Clean-Room-Neuimplementierung von Microsoft Word, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Escritura y diseño de documentos; una reimplementación de código abierto, tipo «clean-room», de Microsoft Word, reconstruida en Rust puro."
+    fr_FR: "Rédaction et mise en forme de documents ; une réimplémentation open source « clean-room » de Microsoft Word, reconstruite en Rust pur."
+    hu_HU: "Írás és dokumentumtervezés; Microsoft Word nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Scrittura e progettazione di documenti; una reimplementazione open source «clean-room» di Microsoft Word, ricostruita in puro Rust."
+    ru_RU: "Тексты и оформление документов; открытая clean-room-реимплементация Microsoft Word, заново написанная на чистом Rust."
+    pl_PL: "Pisanie i projektowanie dokumentów; otwartoźródłowa reimplementacja „clean-room” programu Microsoft Word, napisana od nowa w czystym Rust."
+    pt_BR: "Escrita e design de documentos; uma reimplementação open source, em clean-room, do Microsoft Word, reconstruída em Rust puro."
+    sv_SE: "Skrivande och dokumentdesign; en open source-reimplementering av Microsoft Word enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Тексти та оформлення документів; відкрита clean-room-реімплементація Microsoft Word, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

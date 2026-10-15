@@ -20,7 +20,7 @@ x-casaos:
     - amd64
     - arm64
   main: vectorcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Media
   title:
@@ -40,19 +40,19 @@ x-casaos:
     sv_SE: "Vektorillustration"
     uk_UA: "Векторна ілюстрація"
   description:
-    en_US: "Vector illustration. A free alternative to Illustrator that runs entirely in your browser using WebAssembly."
-    zh_CN: "矢量插画。Illustrator 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "الرسم التوضيحي المتجهي. بديل مجاني لبرنامج Illustrator يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Vektorillustration. Eine kostenlose Alternative zu Illustrator, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Ilustración vectorial. Una alternativa gratuita a Illustrator que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Illustration vectorielle. Une alternative gratuite à Illustrator qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Vektorgrafikus illusztráció. Ingyenes alternatíva (Illustrator helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Illustrazione vettoriale. Un'alternativa gratuita a Illustrator che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Векторная иллюстрация. Бесплатная альтернатива Illustrator, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Ilustracja wektorowa. Darmowa alternatywa dla Illustrator, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Ilustração vetorial. Uma alternativa gratuita ao Illustrator que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Vektorillustration. Ett gratis alternativ till Illustrator som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Векторна ілюстрація. Безкоштовна альтернатива Illustrator, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Vector illustration; an open-source, clean-room reimplementation of Adobe Illustrator, rebuilt in pure Rust."
+    zh_CN: "矢量插画；Adobe Illustrator 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "الرسم التوضيحي المتجهي؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Adobe Illustrator، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Vektorillustration; eine quelloffene Clean-Room-Neuimplementierung von Adobe Illustrator, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Ilustración vectorial; una reimplementación de código abierto, tipo «clean-room», de Adobe Illustrator, reconstruida en Rust puro."
+    fr_FR: "Illustration vectorielle ; une réimplémentation open source « clean-room » d'Adobe Illustrator, reconstruite en Rust pur."
+    hu_HU: "Vektorgrafikus illusztráció; Adobe Illustrator nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Illustrazione vettoriale; una reimplementazione open source «clean-room» di Adobe Illustrator, ricostruita in puro Rust."
+    ru_RU: "Векторная иллюстрация; открытая clean-room-реимплементация Adobe Illustrator, заново написанная на чистом Rust."
+    pl_PL: "Ilustracja wektorowa; otwartoźródłowa reimplementacja „clean-room” programu Adobe Illustrator, napisana od nowa w czystym Rust."
+    pt_BR: "Ilustração vetorial; uma reimplementação open source, em clean-room, do Adobe Illustrator, reconstruída em Rust puro."
+    sv_SE: "Vektorillustration; en open source-reimplementering av Adobe Illustrator enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Векторна ілюстрація; відкрита clean-room-реімплементація Adobe Illustrator, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

@@ -20,39 +20,39 @@ x-casaos:
     - amd64
     - arm64
   main: soundcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Media
   title:
     en_US: SoundCraft
   tagline:
-    en_US: "Audio recording and mixing"
-    zh_CN: "音频录制与混音"
-    ar_SA: "تسجيل الصوت ومزجه"
-    de_DE: "Audioaufnahme und Mischung"
-    es_ES: "Grabación y mezcla de audio"
-    fr_FR: "Enregistrement et mixage audio"
-    hu_HU: "Hangfelvétel és keverés"
-    it_IT: "Registrazione e missaggio audio"
-    ru_RU: "Запись и сведение звука"
-    pl_PL: "Nagrywanie i miksowanie dźwięku"
-    pt_BR: "Gravação e mixagem de áudio"
-    sv_SE: "Ljudinspelning och mixning"
-    uk_UA: "Запис і зведення звуку"
+    en_US: "Recording, editing and mixing audio"
+    zh_CN: "音频录制、编辑与混音"
+    ar_SA: "تسجيل الصوت وتحريره ومزجه"
+    de_DE: "Audio aufnehmen, bearbeiten und mischen"
+    es_ES: "Grabación, edición y mezcla de audio"
+    fr_FR: "Enregistrement, édition et mixage audio"
+    hu_HU: "Hangfelvétel, szerkesztés és keverés"
+    it_IT: "Registrazione, editing e missaggio audio"
+    ru_RU: "Запись, редактирование и сведение звука"
+    pl_PL: "Nagrywanie, edycja i miksowanie dźwięku"
+    pt_BR: "Gravação, edição e mixagem de áudio"
+    sv_SE: "Inspelning, redigering och mixning av ljud"
+    uk_UA: "Запис, редагування та зведення звуку"
   description:
-    en_US: "Audio recording and mixing. A free alternative to Audition that runs entirely in your browser using WebAssembly."
-    zh_CN: "音频录制与混音。Audition 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "تسجيل الصوت ومزجه. بديل مجاني لبرنامج Audition يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Audioaufnahme und Mischung. Eine kostenlose Alternative zu Audition, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Grabación y mezcla de audio. Una alternativa gratuita a Audition que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Enregistrement et mixage audio. Une alternative gratuite à Audition qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Hangfelvétel és keverés. Ingyenes alternatíva (Audition helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Registrazione e missaggio audio. Un'alternativa gratuita a Audition che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Запись и сведение звука. Бесплатная альтернатива Audition, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Nagrywanie i miksowanie dźwięku. Darmowa alternatywa dla Audition, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Gravação e mixagem de áudio. Uma alternativa gratuita ao Audition que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Ljudinspelning och mixning. Ett gratis alternativ till Audition som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Запис і зведення звуку. Безкоштовна альтернатива Audition, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Recording, editing and mixing audio; an open-source, clean-room reimplementation of Avid Pro Tools, rebuilt in pure Rust."
+    zh_CN: "音频录制、编辑与混音；Avid Pro Tools 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "تسجيل الصوت وتحريره ومزجه؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Avid Pro Tools، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Audio aufnehmen, bearbeiten und mischen; eine quelloffene Clean-Room-Neuimplementierung von Avid Pro Tools, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Grabación, edición y mezcla de audio; una reimplementación de código abierto, tipo «clean-room», de Avid Pro Tools, reconstruida en Rust puro."
+    fr_FR: "Enregistrement, édition et mixage audio ; une réimplémentation open source « clean-room » d'Avid Pro Tools, reconstruite en Rust pur."
+    hu_HU: "Hangfelvétel, szerkesztés és keverés; Avid Pro Tools nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Registrazione, editing e missaggio audio; una reimplementazione open source «clean-room» di Avid Pro Tools, ricostruita in puro Rust."
+    ru_RU: "Запись, редактирование и сведение звука; открытая clean-room-реимплементация Avid Pro Tools, заново написанная на чистом Rust."
+    pl_PL: "Nagrywanie, edycja i miksowanie dźwięku; otwartoźródłowa reimplementacja „clean-room” programu Avid Pro Tools, napisana od nowa w czystym Rust."
+    pt_BR: "Gravação, edição e mixagem de áudio; uma reimplementação open source, em clean-room, do Avid Pro Tools, reconstruída em Rust puro."
+    sv_SE: "Inspelning, redigering och mixning av ljud; en open source-reimplementering av Avid Pro Tools enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Запис, редагування та зведення звуку; відкрита clean-room-реімплементація Avid Pro Tools, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SoundCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

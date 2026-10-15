@@ -20,13 +20,13 @@ x-casaos:
     - amd64
     - arm64
   main: effectcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Media
   title:
     en_US: EffectCraft
   tagline:
-    en_US: "Motion graphics and VFX"
+    en_US: "Motion graphics and visual effects"
     zh_CN: "动态图形与视觉特效"
     ar_SA: "الرسوم المتحركة والمؤثرات البصرية"
     de_DE: "Motion Graphics und visuelle Effekte"
@@ -40,19 +40,19 @@ x-casaos:
     sv_SE: "Motion graphics och visuella effekter"
     uk_UA: "Моушн-графіка та візуальні ефекти"
   description:
-    en_US: "Motion graphics and VFX. A free alternative to After Effects that runs entirely in your browser using WebAssembly."
-    zh_CN: "动态图形与视觉特效。After Effects 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "الرسوم المتحركة والمؤثرات البصرية. بديل مجاني لبرنامج After Effects يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Motion Graphics und visuelle Effekte. Eine kostenlose Alternative zu After Effects, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Motion graphics y efectos visuales. Una alternativa gratuita a After Effects que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Motion design et effets visuels. Une alternative gratuite à After Effects qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Motion graphics és vizuális effektek. Ingyenes alternatíva (After Effects helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Motion graphics ed effetti visivi. Un'alternativa gratuita a After Effects che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Моушн-графика и визуальные эффекты. Бесплатная альтернатива After Effects, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Motion graphics i efekty wizualne. Darmowa alternatywa dla After Effects, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Motion graphics e efeitos visuais. Uma alternativa gratuita ao After Effects que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Motion graphics och visuella effekter. Ett gratis alternativ till After Effects som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Моушн-графіка та візуальні ефекти. Безкоштовна альтернатива After Effects, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Motion graphics and visual effects; an open-source, clean-room reimplementation of Adobe After Effects, rebuilt in pure Rust."
+    zh_CN: "动态图形与视觉特效；Adobe After Effects 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "الرسوم المتحركة والمؤثرات البصرية؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Adobe After Effects، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Motion Graphics und visuelle Effekte; eine quelloffene Clean-Room-Neuimplementierung von Adobe After Effects, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Motion graphics y efectos visuales; una reimplementación de código abierto, tipo «clean-room», de Adobe After Effects, reconstruida en Rust puro."
+    fr_FR: "Motion design et effets visuels ; une réimplémentation open source « clean-room » d'Adobe After Effects, reconstruite en Rust pur."
+    hu_HU: "Motion graphics és vizuális effektek; Adobe After Effects nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Motion graphics ed effetti visivi; una reimplementazione open source «clean-room» di Adobe After Effects, ricostruita in puro Rust."
+    ru_RU: "Моушн-графика и визуальные эффекты; открытая clean-room-реимплементация Adobe After Effects, заново написанная на чистом Rust."
+    pl_PL: "Motion graphics i efekty wizualne; otwartoźródłowa reimplementacja „clean-room” programu Adobe After Effects, napisana od nowa w czystym Rust."
+    pt_BR: "Motion graphics e efeitos visuais; uma reimplementação open source, em clean-room, do Adobe After Effects, reconstruída em Rust puro."
+    sv_SE: "Motion graphics och visuella effekter; en open source-reimplementering av Adobe After Effects enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Моушн-графіка та візуальні ефекти; відкрита clean-room-реімплементація Adobe After Effects, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/EffectCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

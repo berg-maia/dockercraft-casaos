@@ -20,13 +20,13 @@ x-casaos:
     - amd64
     - arm64
   main: lightcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Media
   title:
     en_US: LightCraft
   tagline:
-    en_US: "Photo library and RAW developing"
+    en_US: "Photo library and raw development"
     zh_CN: "照片库与 RAW 处理"
     ar_SA: "مكتبة الصور وتحميض RAW"
     de_DE: "Fotobibliothek und RAW-Entwicklung"
@@ -40,19 +40,19 @@ x-casaos:
     sv_SE: "Fotobibliotek och RAW-framkallning"
     uk_UA: "Фотобібліотека та обробка RAW"
   description:
-    en_US: "Photo library and RAW developing. A free alternative to Lightroom that runs entirely in your browser using WebAssembly."
-    zh_CN: "照片库与 RAW 处理。Lightroom 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "مكتبة الصور وتحميض RAW. بديل مجاني لبرنامج Lightroom يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Fotobibliothek und RAW-Entwicklung. Eine kostenlose Alternative zu Lightroom, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Biblioteca de fotos y revelado RAW. Una alternativa gratuita a Lightroom que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Photothèque et développement RAW. Une alternative gratuite à Lightroom qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Fotótár és RAW-előhívás. Ingyenes alternatíva (Lightroom helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Libreria foto e sviluppo RAW. Un'alternativa gratuita a Lightroom che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Фотобиблиотека и обработка RAW. Бесплатная альтернатива Lightroom, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Biblioteka zdjęć i wywoływanie RAW. Darmowa alternatywa dla Lightroom, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Biblioteca de fotos e revelação RAW. Uma alternativa gratuita ao Lightroom que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Fotobibliotek och RAW-framkallning. Ett gratis alternativ till Lightroom som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Фотобібліотека та обробка RAW. Безкоштовна альтернатива Lightroom, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Photo library and raw development; an open-source, clean-room reimplementation of Adobe Lightroom, rebuilt in pure Rust."
+    zh_CN: "照片库与 RAW 处理；Adobe Lightroom 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "مكتبة الصور وتحميض RAW؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Adobe Lightroom، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Fotobibliothek und RAW-Entwicklung; eine quelloffene Clean-Room-Neuimplementierung von Adobe Lightroom, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Biblioteca de fotos y revelado RAW; una reimplementación de código abierto, tipo «clean-room», de Adobe Lightroom, reconstruida en Rust puro."
+    fr_FR: "Photothèque et développement RAW ; une réimplémentation open source « clean-room » d'Adobe Lightroom, reconstruite en Rust pur."
+    hu_HU: "Fotótár és RAW-előhívás; Adobe Lightroom nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Libreria foto e sviluppo RAW; una reimplementazione open source «clean-room» di Adobe Lightroom, ricostruita in puro Rust."
+    ru_RU: "Фотобиблиотека и обработка RAW; открытая clean-room-реимплементация Adobe Lightroom, заново написанная на чистом Rust."
+    pl_PL: "Biblioteka zdjęć i wywoływanie RAW; otwartoźródłowa reimplementacja „clean-room” programu Adobe Lightroom, napisana od nowa w czystym Rust."
+    pt_BR: "Biblioteca de fotos e revelação RAW; uma reimplementação open source, em clean-room, do Adobe Lightroom, reconstruída em Rust puro."
+    sv_SE: "Fotobibliotek och RAW-framkallning; en open source-reimplementering av Adobe Lightroom enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Фотобібліотека та обробка RAW; відкрита clean-room-реімплементація Adobe Lightroom, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

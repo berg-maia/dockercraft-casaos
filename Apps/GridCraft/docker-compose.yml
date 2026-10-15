@@ -20,39 +20,39 @@ x-casaos:
     - amd64
     - arm64
   main: gridcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Productivity
   title:
     en_US: GridCraft
   tagline:
-    en_US: "Spreadsheets and data analysis"
-    zh_CN: "电子表格与数据分析"
-    ar_SA: "جداول البيانات وتحليلها"
-    de_DE: "Tabellenkalkulation und Datenanalyse"
-    es_ES: "Hojas de cálculo y análisis de datos"
-    fr_FR: "Tableur et analyse de données"
-    hu_HU: "Táblázatkezelés és adatelemzés"
-    it_IT: "Fogli di calcolo e analisi dei dati"
-    ru_RU: "Электронные таблицы и анализ данных"
-    pl_PL: "Arkusze kalkulacyjne i analiza danych"
-    pt_BR: "Planilhas e análise de dados"
-    sv_SE: "Kalkylblad och dataanalys"
-    uk_UA: "Електронні таблиці та аналіз даних"
+    en_US: "Spreadsheets and data"
+    zh_CN: "电子表格与数据"
+    ar_SA: "جداول البيانات والبيانات"
+    de_DE: "Tabellenkalkulation und Daten"
+    es_ES: "Hojas de cálculo y datos"
+    fr_FR: "Tableurs et données"
+    hu_HU: "Táblázatok és adatok"
+    it_IT: "Fogli di calcolo e dati"
+    ru_RU: "Электронные таблицы и данные"
+    pl_PL: "Arkusze kalkulacyjne i dane"
+    pt_BR: "Planilhas e dados"
+    sv_SE: "Kalkylblad och data"
+    uk_UA: "Електронні таблиці та дані"
   description:
-    en_US: "Spreadsheets and data analysis. A free alternative to Excel that runs entirely in your browser using WebAssembly."
-    zh_CN: "电子表格与数据分析。Excel 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "جداول البيانات وتحليلها. بديل مجاني لبرنامج Excel يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Tabellenkalkulation und Datenanalyse. Eine kostenlose Alternative zu Excel, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Hojas de cálculo y análisis de datos. Una alternativa gratuita a Excel que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Tableur et analyse de données. Une alternative gratuite à Excel qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Táblázatkezelés és adatelemzés. Ingyenes alternatíva (Excel helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Fogli di calcolo e analisi dei dati. Un'alternativa gratuita a Excel che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Электронные таблицы и анализ данных. Бесплатная альтернатива Excel, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Arkusze kalkulacyjne i analiza danych. Darmowa alternatywa dla Excel, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Planilhas e análise de dados. Uma alternativa gratuita ao Excel que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Kalkylblad och dataanalys. Ett gratis alternativ till Excel som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Електронні таблиці та аналіз даних. Безкоштовна альтернатива Excel, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Spreadsheets and data; an open-source, clean-room reimplementation of Microsoft Excel, rebuilt in pure Rust."
+    zh_CN: "电子表格与数据；Microsoft Excel 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "جداول البيانات والبيانات؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Microsoft Excel، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Tabellenkalkulation und Daten; eine quelloffene Clean-Room-Neuimplementierung von Microsoft Excel, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Hojas de cálculo y datos; una reimplementación de código abierto, tipo «clean-room», de Microsoft Excel, reconstruida en Rust puro."
+    fr_FR: "Tableurs et données ; une réimplémentation open source « clean-room » de Microsoft Excel, reconstruite en Rust pur."
+    hu_HU: "Táblázatok és adatok; Microsoft Excel nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Fogli di calcolo e dati; una reimplementazione open source «clean-room» di Microsoft Excel, ricostruita in puro Rust."
+    ru_RU: "Электронные таблицы и данные; открытая clean-room-реимплементация Microsoft Excel, заново написанная на чистом Rust."
+    pl_PL: "Arkusze kalkulacyjne i dane; otwartoźródłowa reimplementacja „clean-room” programu Microsoft Excel, napisana od nowa w czystym Rust."
+    pt_BR: "Planilhas e dados; uma reimplementação open source, em clean-room, do Microsoft Excel, reconstruída em Rust puro."
+    sv_SE: "Kalkylblad och data; en open source-reimplementering av Microsoft Excel enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Електронні таблиці та дані; відкрита clean-room-реімплементація Microsoft Excel, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

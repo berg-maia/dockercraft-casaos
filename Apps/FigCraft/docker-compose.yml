@@ -20,39 +20,39 @@ x-casaos:
     - amd64
     - arm64
   main: figcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Media
   title:
     en_US: FigCraft
   tagline:
-    en_US: "Interface design and prototyping"
-    zh_CN: "界面设计与原型制作"
-    ar_SA: "تصميم الواجهات والنماذج الأولية"
-    de_DE: "Oberflächendesign und Prototyping"
-    es_ES: "Diseño de interfaces y prototipado"
-    fr_FR: "Conception d'interfaces et prototypage"
-    hu_HU: "Felülettervezés és prototípus-készítés"
-    it_IT: "Progettazione di interfacce e prototipazione"
-    ru_RU: "Дизайн интерфейсов и прототипирование"
-    pl_PL: "Projektowanie interfejsów i prototypowanie"
-    pt_BR: "Design de interfaces e prototipagem"
-    sv_SE: "Gränssnittsdesign och prototyper"
-    uk_UA: "Дизайн інтерфейсів і прототипування"
+    en_US: "Interface design"
+    zh_CN: "界面设计"
+    ar_SA: "تصميم الواجهات"
+    de_DE: "Oberflächendesign"
+    es_ES: "Diseño de interfaces"
+    fr_FR: "Conception d'interfaces"
+    hu_HU: "Felülettervezés"
+    it_IT: "Progettazione di interfacce"
+    ru_RU: "Дизайн интерфейсов"
+    pl_PL: "Projektowanie interfejsów"
+    pt_BR: "Design de interfaces"
+    sv_SE: "Gränssnittsdesign"
+    uk_UA: "Дизайн інтерфейсів"
   description:
-    en_US: "Interface design and prototyping. A free alternative to Figma that runs entirely in your browser using WebAssembly."
-    zh_CN: "界面设计与原型制作。Figma 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "تصميم الواجهات والنماذج الأولية. بديل مجاني لبرنامج Figma يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "Oberflächendesign und Prototyping. Eine kostenlose Alternative zu Figma, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Diseño de interfaces y prototipado. Una alternativa gratuita a Figma que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Conception d'interfaces et prototypage. Une alternative gratuite à Figma qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "Felülettervezés és prototípus-készítés. Ingyenes alternatíva (Figma helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Progettazione di interfacce e prototipazione. Un'alternativa gratuita a Figma che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Дизайн интерфейсов и прототипирование. Бесплатная альтернатива Figma, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Projektowanie interfejsów i prototypowanie. Darmowa alternatywa dla Figma, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Design de interfaces e prototipagem. Uma alternativa gratuita ao Figma que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "Gränssnittsdesign och prototyper. Ett gratis alternativ till Figma som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Дизайн інтерфейсів і прототипування. Безкоштовна альтернатива Figma, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "Interface design; an open-source, clean-room reimplementation of Figma, rebuilt in pure Rust."
+    zh_CN: "界面设计；Figma 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "تصميم الواجهات؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Figma، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Oberflächendesign; eine quelloffene Clean-Room-Neuimplementierung von Figma, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Diseño de interfaces; una reimplementación de código abierto, tipo «clean-room», de Figma, reconstruida en Rust puro."
+    fr_FR: "Conception d'interfaces ; une réimplémentation open source « clean-room » de Figma, reconstruite en Rust pur."
+    hu_HU: "Felülettervezés; Figma nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Progettazione di interfacce; una reimplementazione open source «clean-room» di Figma, ricostruita in puro Rust."
+    ru_RU: "Дизайн интерфейсов; открытая clean-room-реимплементация Figma, заново написанная на чистом Rust."
+    pl_PL: "Projektowanie interfejsów; otwartoźródłowa reimplementacja „clean-room” programu Figma, napisana od nowa w czystym Rust."
+    pt_BR: "Design de interfaces; uma reimplementação open source, em clean-room, do Figma, reconstruída em Rust puro."
+    sv_SE: "Gränssnittsdesign; en open source-reimplementering av Figma enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Дизайн інтерфейсів; відкрита clean-room-реімплементація Figma, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FigCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:

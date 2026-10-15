@@ -20,39 +20,39 @@ x-casaos:
     - amd64
     - arm64
   main: pdfcraft
-  author: berg-maia
+  author: ArtCraft
   developer: ArtCraft
   category: Productivity
   title:
     en_US: PdfCraft
   tagline:
-    en_US: "PDF workbench"
+    en_US: "The PDF workbench"
     zh_CN: "PDF 工作台"
     ar_SA: "منصة عمل PDF"
-    de_DE: "PDF-Werkstatt"
-    es_ES: "Mesa de trabajo para PDF"
-    fr_FR: "Atelier PDF"
-    hu_HU: "PDF-munkaállomás"
-    it_IT: "Banco di lavoro PDF"
+    de_DE: "Die PDF-Werkstatt"
+    es_ES: "El banco de trabajo para PDF"
+    fr_FR: "L'atelier PDF"
+    hu_HU: "A PDF-munkaállomás"
+    it_IT: "Il banco di lavoro PDF"
     ru_RU: "Рабочее место для PDF"
     pl_PL: "Warsztat PDF"
-    pt_BR: "Central de trabalho com PDF"
-    sv_SE: "PDF-verkstad"
+    pt_BR: "A central de trabalho com PDF"
+    sv_SE: "PDF-verkstaden"
     uk_UA: "Робоче місце для PDF"
   description:
-    en_US: "PDF workbench. A free alternative to Acrobat that runs entirely in your browser using WebAssembly."
-    zh_CN: "PDF 工作台。Acrobat 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
-    ar_SA: "منصة عمل PDF. بديل مجاني لبرنامج Acrobat يعمل بالكامل في المتصفح باستخدام WebAssembly."
-    de_DE: "PDF-Werkstatt. Eine kostenlose Alternative zu Acrobat, die über WebAssembly vollständig im Browser läuft."
-    es_ES: "Mesa de trabajo para PDF. Una alternativa gratuita a Acrobat que se ejecuta íntegramente en el navegador mediante WebAssembly."
-    fr_FR: "Atelier PDF. Une alternative gratuite à Acrobat qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
-    hu_HU: "PDF-munkaállomás. Ingyenes alternatíva (Acrobat helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
-    it_IT: "Banco di lavoro PDF. Un'alternativa gratuita a Acrobat che funziona interamente nel browser grazie a WebAssembly."
-    ru_RU: "Рабочее место для PDF. Бесплатная альтернатива Acrobat, которая работает прямо в браузере благодаря WebAssembly."
-    pl_PL: "Warsztat PDF. Darmowa alternatywa dla Acrobat, działająca w całości w przeglądarce dzięki WebAssembly."
-    pt_BR: "Central de trabalho com PDF. Uma alternativa gratuita ao Acrobat que roda inteiramente no navegador, usando WebAssembly."
-    sv_SE: "PDF-verkstad. Ett gratis alternativ till Acrobat som körs helt i webbläsaren med WebAssembly."
-    uk_UA: "Робоче місце для PDF. Безкоштовна альтернатива Acrobat, що працює повністю в браузері завдяки WebAssembly."
+    en_US: "The PDF workbench; an open-source, clean-room reimplementation of Adobe Acrobat, rebuilt in pure Rust."
+    zh_CN: "PDF 工作台；Adobe Acrobat 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "منصة عمل PDF؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Adobe Acrobat، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Die PDF-Werkstatt; eine quelloffene Clean-Room-Neuimplementierung von Adobe Acrobat, komplett in reinem Rust neu aufgebaut."
+    es_ES: "El banco de trabajo para PDF; una reimplementación de código abierto, tipo «clean-room», de Adobe Acrobat, reconstruida en Rust puro."
+    fr_FR: "L'atelier PDF ; une réimplémentation open source « clean-room » d'Adobe Acrobat, reconstruite en Rust pur."
+    hu_HU: "A PDF-munkaállomás; Adobe Acrobat nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Il banco di lavoro PDF; una reimplementazione open source «clean-room» di Adobe Acrobat, ricostruita in puro Rust."
+    ru_RU: "Рабочее место для PDF; открытая clean-room-реимплементация Adobe Acrobat, заново написанная на чистом Rust."
+    pl_PL: "Warsztat PDF; otwartoźródłowa reimplementacja „clean-room” programu Adobe Acrobat, napisana od nowa w czystym Rust."
+    pt_BR: "A central de trabalho com PDF; uma reimplementação open source, em clean-room, do Adobe Acrobat, reconstruída em Rust puro."
+    sv_SE: "PDF-verkstaden; en open source-reimplementering av Adobe Acrobat enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Робоче місце для PDF; відкрита clean-room-реімплементація Adobe Acrobat, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/PdfCraft/icon.svg
   # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
   # screenshot_link:
