@@ -1,0 +1,67 @@
+name: cadcraft
+
+services:
+  cadcraft:
+    image: ghcr.io/berg-maia/cadcraft-web:latest
+    container_name: cadcraft
+    restart: unless-stopped
+    ports:
+      - "8776:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.cadcraft
+  architectures:
+    - amd64
+    - arm64
+  main: cadcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Productivity
+  title:
+    en_US: CADCraft
+  tagline:
+    en_US: "CAD and technical drawing"
+    zh_CN: "CAD 与技术绘图"
+    ar_SA: "الرسم الهندسي بمساعدة الحاسوب"
+    de_DE: "CAD und technisches Zeichnen"
+    es_ES: "CAD y dibujo técnico"
+    fr_FR: "CAO et dessin technique"
+    hu_HU: "CAD és műszaki rajz"
+    it_IT: "CAD e disegno tecnico"
+    ru_RU: "САПР и технический чертёж"
+    pl_PL: "CAD i rysunek techniczny"
+    pt_BR: "CAD e desenho técnico"
+    sv_SE: "CAD och teknisk ritning"
+    uk_UA: "САПР і технічне креслення"
+  description:
+    en_US: "CAD and technical drawing. A free alternative to AutoCAD that runs entirely in your browser using WebAssembly."
+    zh_CN: "CAD 与技术绘图。AutoCAD 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "الرسم الهندسي بمساعدة الحاسوب. بديل مجاني لبرنامج AutoCAD يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "CAD und technisches Zeichnen. Eine kostenlose Alternative zu AutoCAD, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "CAD y dibujo técnico. Una alternativa gratuita a AutoCAD que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "CAO et dessin technique. Une alternative gratuite à AutoCAD qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "CAD és műszaki rajz. Ingyenes alternatíva (AutoCAD helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "CAD e disegno tecnico. Un'alternativa gratuita a AutoCAD che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "САПР и технический чертёж. Бесплатная альтернатива AutoCAD, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "CAD i rysunek techniczny. Darmowa alternatywa dla AutoCAD, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "CAD e desenho técnico. Uma alternativa gratuita ao AutoCAD que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "CAD och teknisk ritning. Ett gratis alternativ till AutoCAD som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "САПР і технічне креслення. Безкоштовна альтернатива AutoCAD, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/CADCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/cadcraft
+  repo: https://github.com/storytold/cadcraft
+  support: https://github.com/storytold/cadcraft/issues
+  index: /
+  port_map: "8776"
+  scheme: http

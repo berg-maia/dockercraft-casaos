@@ -1,0 +1,67 @@
+name: gridcraft
+
+services:
+  gridcraft:
+    image: ghcr.io/berg-maia/gridcraft-web:latest
+    container_name: gridcraft
+    restart: unless-stopped
+    ports:
+      - "8777:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.gridcraft
+  architectures:
+    - amd64
+    - arm64
+  main: gridcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Productivity
+  title:
+    en_US: GridCraft
+  tagline:
+    en_US: "Spreadsheets and data analysis"
+    zh_CN: "电子表格与数据分析"
+    ar_SA: "جداول البيانات وتحليلها"
+    de_DE: "Tabellenkalkulation und Datenanalyse"
+    es_ES: "Hojas de cálculo y análisis de datos"
+    fr_FR: "Tableur et analyse de données"
+    hu_HU: "Táblázatkezelés és adatelemzés"
+    it_IT: "Fogli di calcolo e analisi dei dati"
+    ru_RU: "Электронные таблицы и анализ данных"
+    pl_PL: "Arkusze kalkulacyjne i analiza danych"
+    pt_BR: "Planilhas e análise de dados"
+    sv_SE: "Kalkylblad och dataanalys"
+    uk_UA: "Електронні таблиці та аналіз даних"
+  description:
+    en_US: "Spreadsheets and data analysis. A free alternative to Excel that runs entirely in your browser using WebAssembly."
+    zh_CN: "电子表格与数据分析。Excel 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "جداول البيانات وتحليلها. بديل مجاني لبرنامج Excel يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Tabellenkalkulation und Datenanalyse. Eine kostenlose Alternative zu Excel, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Hojas de cálculo y análisis de datos. Una alternativa gratuita a Excel que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Tableur et analyse de données. Une alternative gratuite à Excel qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Táblázatkezelés és adatelemzés. Ingyenes alternatíva (Excel helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Fogli di calcolo e analisi dei dati. Un'alternativa gratuita a Excel che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Электронные таблицы и анализ данных. Бесплатная альтернатива Excel, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Arkusze kalkulacyjne i analiza danych. Darmowa alternatywa dla Excel, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Planilhas e análise de dados. Uma alternativa gratuita ao Excel que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Kalkylblad och dataanalys. Ett gratis alternativ till Excel som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Електронні таблиці та аналіз даних. Безкоштовна альтернатива Excel, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/gridcraft
+  repo: https://github.com/storytold/gridcraft
+  support: https://github.com/storytold/gridcraft/issues
+  index: /
+  port_map: "8777"
+  scheme: http

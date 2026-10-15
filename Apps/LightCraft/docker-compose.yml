@@ -1,0 +1,67 @@
+name: lightcraft
+
+services:
+  lightcraft:
+    image: ghcr.io/berg-maia/lightcraft-web:latest
+    container_name: lightcraft
+    restart: unless-stopped
+    ports:
+      - "8768:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.lightcraft
+  architectures:
+    - amd64
+    - arm64
+  main: lightcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: LightCraft
+  tagline:
+    en_US: "Photo library and RAW developing"
+    zh_CN: "照片库与 RAW 处理"
+    ar_SA: "مكتبة الصور وتحميض RAW"
+    de_DE: "Fotobibliothek und RAW-Entwicklung"
+    es_ES: "Biblioteca de fotos y revelado RAW"
+    fr_FR: "Photothèque et développement RAW"
+    hu_HU: "Fotótár és RAW-előhívás"
+    it_IT: "Libreria foto e sviluppo RAW"
+    ru_RU: "Фотобиблиотека и обработка RAW"
+    pl_PL: "Biblioteka zdjęć i wywoływanie RAW"
+    pt_BR: "Biblioteca de fotos e revelação RAW"
+    sv_SE: "Fotobibliotek och RAW-framkallning"
+    uk_UA: "Фотобібліотека та обробка RAW"
+  description:
+    en_US: "Photo library and RAW developing. A free alternative to Lightroom that runs entirely in your browser using WebAssembly."
+    zh_CN: "照片库与 RAW 处理。Lightroom 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "مكتبة الصور وتحميض RAW. بديل مجاني لبرنامج Lightroom يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Fotobibliothek und RAW-Entwicklung. Eine kostenlose Alternative zu Lightroom, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Biblioteca de fotos y revelado RAW. Una alternativa gratuita a Lightroom que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Photothèque et développement RAW. Une alternative gratuite à Lightroom qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Fotótár és RAW-előhívás. Ingyenes alternatíva (Lightroom helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Libreria foto e sviluppo RAW. Un'alternativa gratuita a Lightroom che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Фотобиблиотека и обработка RAW. Бесплатная альтернатива Lightroom, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Biblioteka zdjęć i wywoływanie RAW. Darmowa alternatywa dla Lightroom, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Biblioteca de fotos e revelação RAW. Uma alternativa gratuita ao Lightroom que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Fotobibliotek och RAW-framkallning. Ett gratis alternativ till Lightroom som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Фотобібліотека та обробка RAW. Безкоштовна альтернатива Lightroom, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/lightcraft
+  repo: https://github.com/storytold/lightcraft
+  support: https://github.com/storytold/lightcraft/issues
+  index: /
+  port_map: "8768"
+  scheme: http

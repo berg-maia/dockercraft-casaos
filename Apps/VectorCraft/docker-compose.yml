@@ -1,0 +1,67 @@
+name: vectorcraft
+
+services:
+  vectorcraft:
+    image: ghcr.io/berg-maia/vectorcraft-web:latest
+    container_name: vectorcraft
+    restart: unless-stopped
+    ports:
+      - "8766:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.vectorcraft
+  architectures:
+    - amd64
+    - arm64
+  main: vectorcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: VectorCraft
+  tagline:
+    en_US: "Vector illustration"
+    zh_CN: "矢量插画"
+    ar_SA: "الرسم التوضيحي المتجهي"
+    de_DE: "Vektorillustration"
+    es_ES: "Ilustración vectorial"
+    fr_FR: "Illustration vectorielle"
+    hu_HU: "Vektorgrafikus illusztráció"
+    it_IT: "Illustrazione vettoriale"
+    ru_RU: "Векторная иллюстрация"
+    pl_PL: "Ilustracja wektorowa"
+    pt_BR: "Ilustração vetorial"
+    sv_SE: "Vektorillustration"
+    uk_UA: "Векторна ілюстрація"
+  description:
+    en_US: "Vector illustration. A free alternative to Illustrator that runs entirely in your browser using WebAssembly."
+    zh_CN: "矢量插画。Illustrator 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "الرسم التوضيحي المتجهي. بديل مجاني لبرنامج Illustrator يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Vektorillustration. Eine kostenlose Alternative zu Illustrator, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Ilustración vectorial. Una alternativa gratuita a Illustrator que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Illustration vectorielle. Une alternative gratuite à Illustrator qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Vektorgrafikus illusztráció. Ingyenes alternatíva (Illustrator helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Illustrazione vettoriale. Un'alternativa gratuita a Illustrator che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Векторная иллюстрация. Бесплатная альтернатива Illustrator, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Ilustracja wektorowa. Darmowa alternatywa dla Illustrator, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Ilustração vetorial. Uma alternativa gratuita ao Illustrator que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Vektorillustration. Ett gratis alternativ till Illustrator som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Векторна ілюстрація. Безкоштовна альтернатива Illustrator, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/VectorCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/vectorcraft
+  repo: https://github.com/storytold/vectorcraft
+  support: https://github.com/storytold/vectorcraft/issues
+  index: /
+  port_map: "8766"
+  scheme: http

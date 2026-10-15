@@ -1,0 +1,67 @@
+name: pdfcraft
+
+services:
+  pdfcraft:
+    image: ghcr.io/berg-maia/pdfcraft-web:latest
+    container_name: pdfcraft
+    restart: unless-stopped
+    ports:
+      - "8769:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.pdfcraft
+  architectures:
+    - amd64
+    - arm64
+  main: pdfcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Productivity
+  title:
+    en_US: PdfCraft
+  tagline:
+    en_US: "PDF workbench"
+    zh_CN: "PDF 工作台"
+    ar_SA: "منصة عمل PDF"
+    de_DE: "PDF-Werkstatt"
+    es_ES: "Mesa de trabajo para PDF"
+    fr_FR: "Atelier PDF"
+    hu_HU: "PDF-munkaállomás"
+    it_IT: "Banco di lavoro PDF"
+    ru_RU: "Рабочее место для PDF"
+    pl_PL: "Warsztat PDF"
+    pt_BR: "Central de trabalho com PDF"
+    sv_SE: "PDF-verkstad"
+    uk_UA: "Робоче місце для PDF"
+  description:
+    en_US: "PDF workbench. A free alternative to Acrobat that runs entirely in your browser using WebAssembly."
+    zh_CN: "PDF 工作台。Acrobat 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "منصة عمل PDF. بديل مجاني لبرنامج Acrobat يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "PDF-Werkstatt. Eine kostenlose Alternative zu Acrobat, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Mesa de trabajo para PDF. Una alternativa gratuita a Acrobat que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Atelier PDF. Une alternative gratuite à Acrobat qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "PDF-munkaállomás. Ingyenes alternatíva (Acrobat helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Banco di lavoro PDF. Un'alternativa gratuita a Acrobat che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Рабочее место для PDF. Бесплатная альтернатива Acrobat, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Warsztat PDF. Darmowa alternatywa dla Acrobat, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Central de trabalho com PDF. Uma alternativa gratuita ao Acrobat que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "PDF-verkstad. Ett gratis alternativ till Acrobat som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Робоче місце для PDF. Безкоштовна альтернатива Acrobat, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/PdfCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/PdfCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/PdfCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/PdfCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/pdfcraft
+  repo: https://github.com/storytold/pdfcraft
+  support: https://github.com/storytold/pdfcraft/issues
+  index: /
+  port_map: "8769"
+  scheme: http

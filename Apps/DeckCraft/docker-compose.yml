@@ -1,0 +1,67 @@
+name: deckcraft
+
+services:
+  deckcraft:
+    image: ghcr.io/berg-maia/deckcraft-web:latest
+    container_name: deckcraft
+    restart: unless-stopped
+    ports:
+      - "8775:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.deckcraft
+  architectures:
+    - amd64
+    - arm64
+  main: deckcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Productivity
+  title:
+    en_US: DeckCraft
+  tagline:
+    en_US: "Presentations"
+    zh_CN: "演示文稿"
+    ar_SA: "العروض التقديمية"
+    de_DE: "Präsentationen"
+    es_ES: "Presentaciones"
+    fr_FR: "Présentations"
+    hu_HU: "Prezentációk"
+    it_IT: "Presentazioni"
+    ru_RU: "Презентации"
+    pl_PL: "Prezentacje"
+    pt_BR: "Apresentações"
+    sv_SE: "Presentationer"
+    uk_UA: "Презентації"
+  description:
+    en_US: "Presentations. A free alternative to PowerPoint that runs entirely in your browser using WebAssembly."
+    zh_CN: "演示文稿。PowerPoint 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "العروض التقديمية. بديل مجاني لبرنامج PowerPoint يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Präsentationen. Eine kostenlose Alternative zu PowerPoint, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Presentaciones. Una alternativa gratuita a PowerPoint que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Présentations. Une alternative gratuite à PowerPoint qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Prezentációk. Ingyenes alternatíva (PowerPoint helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Presentazioni. Un'alternativa gratuita a PowerPoint che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Презентации. Бесплатная альтернатива PowerPoint, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Prezentacje. Darmowa alternatywa dla PowerPoint, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Apresentações. Uma alternativa gratuita ao PowerPoint que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Presentationer. Ett gratis alternativ till PowerPoint som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Презентації. Безкоштовна альтернатива PowerPoint, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DeckCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DeckCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DeckCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DeckCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/deckcraft
+  repo: https://github.com/storytold/deckcraft
+  support: https://github.com/storytold/deckcraft/issues
+  index: /
+  port_map: "8775"
+  scheme: http

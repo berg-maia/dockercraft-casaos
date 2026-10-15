@@ -1,0 +1,67 @@
+name: designcraft
+
+services:
+  designcraft:
+    image: ghcr.io/berg-maia/designcraft-web:latest
+    container_name: designcraft
+    restart: unless-stopped
+    ports:
+      - "8771:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.designcraft
+  architectures:
+    - amd64
+    - arm64
+  main: designcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: DesignCraft
+  tagline:
+    en_US: "Page layout and publishing"
+    zh_CN: "排版与出版"
+    ar_SA: "تنسيق الصفحات والنشر"
+    de_DE: "Seitenlayout und Veröffentlichung"
+    es_ES: "Maquetación y publicación"
+    fr_FR: "Mise en page et publication"
+    hu_HU: "Oldalszerkesztés és kiadás"
+    it_IT: "Impaginazione e pubblicazione"
+    ru_RU: "Верстка и публикация"
+    pl_PL: "Skład i publikacja"
+    pt_BR: "Diagramação e publicação"
+    sv_SE: "Sidlayout och publicering"
+    uk_UA: "Верстка та публікація"
+  description:
+    en_US: "Page layout and publishing. A free alternative to InDesign that runs entirely in your browser using WebAssembly."
+    zh_CN: "排版与出版。InDesign 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "تنسيق الصفحات والنشر. بديل مجاني لبرنامج InDesign يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Seitenlayout und Veröffentlichung. Eine kostenlose Alternative zu InDesign, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Maquetación y publicación. Una alternativa gratuita a InDesign que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Mise en page et publication. Une alternative gratuite à InDesign qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Oldalszerkesztés és kiadás. Ingyenes alternatíva (InDesign helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Impaginazione e pubblicazione. Un'alternativa gratuita a InDesign che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Верстка и публикация. Бесплатная альтернатива InDesign, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Skład i publikacja. Darmowa alternatywa dla InDesign, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Diagramação e publicação. Uma alternativa gratuita ao InDesign que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Sidlayout och publicering. Ett gratis alternativ till InDesign som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Верстка та публікація. Безкоштовна альтернатива InDesign, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DesignCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DesignCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DesignCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/DesignCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/designcraft
+  repo: https://github.com/storytold/designcraft
+  support: https://github.com/storytold/designcraft/issues
+  index: /
+  port_map: "8771"
+  scheme: http

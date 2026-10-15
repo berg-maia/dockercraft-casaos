@@ -1,0 +1,67 @@
+name: soundcraft
+
+services:
+  soundcraft:
+    image: ghcr.io/berg-maia/soundcraft-web:latest
+    container_name: soundcraft
+    restart: unless-stopped
+    ports:
+      - "8774:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.soundcraft
+  architectures:
+    - amd64
+    - arm64
+  main: soundcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: SoundCraft
+  tagline:
+    en_US: "Audio recording and mixing"
+    zh_CN: "音频录制与混音"
+    ar_SA: "تسجيل الصوت ومزجه"
+    de_DE: "Audioaufnahme und Mischung"
+    es_ES: "Grabación y mezcla de audio"
+    fr_FR: "Enregistrement et mixage audio"
+    hu_HU: "Hangfelvétel és keverés"
+    it_IT: "Registrazione e missaggio audio"
+    ru_RU: "Запись и сведение звука"
+    pl_PL: "Nagrywanie i miksowanie dźwięku"
+    pt_BR: "Gravação e mixagem de áudio"
+    sv_SE: "Ljudinspelning och mixning"
+    uk_UA: "Запис і зведення звуку"
+  description:
+    en_US: "Audio recording and mixing. A free alternative to Audition that runs entirely in your browser using WebAssembly."
+    zh_CN: "音频录制与混音。Audition 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "تسجيل الصوت ومزجه. بديل مجاني لبرنامج Audition يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Audioaufnahme und Mischung. Eine kostenlose Alternative zu Audition, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Grabación y mezcla de audio. Una alternativa gratuita a Audition que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Enregistrement et mixage audio. Une alternative gratuite à Audition qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Hangfelvétel és keverés. Ingyenes alternatíva (Audition helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Registrazione e missaggio audio. Un'alternativa gratuita a Audition che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Запись и сведение звука. Бесплатная альтернатива Audition, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Nagrywanie i miksowanie dźwięku. Darmowa alternatywa dla Audition, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Gravação e mixagem de áudio. Uma alternativa gratuita ao Audition que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Ljudinspelning och mixning. Ett gratis alternativ till Audition som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Запис і зведення звуку. Безкоштовна альтернатива Audition, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SoundCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SoundCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SoundCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SoundCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/soundcraft
+  repo: https://github.com/storytold/soundcraft
+  support: https://github.com/storytold/soundcraft/issues
+  index: /
+  port_map: "8774"
+  scheme: http

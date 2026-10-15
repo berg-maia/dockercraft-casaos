@@ -1,0 +1,67 @@
+name: effectcraft
+
+services:
+  effectcraft:
+    image: ghcr.io/berg-maia/effectcraft-web:latest
+    container_name: effectcraft
+    restart: unless-stopped
+    ports:
+      - "8770:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.effectcraft
+  architectures:
+    - amd64
+    - arm64
+  main: effectcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: EffectCraft
+  tagline:
+    en_US: "Motion graphics and VFX"
+    zh_CN: "动态图形与视觉特效"
+    ar_SA: "الرسوم المتحركة والمؤثرات البصرية"
+    de_DE: "Motion Graphics und visuelle Effekte"
+    es_ES: "Motion graphics y efectos visuales"
+    fr_FR: "Motion design et effets visuels"
+    hu_HU: "Motion graphics és vizuális effektek"
+    it_IT: "Motion graphics ed effetti visivi"
+    ru_RU: "Моушн-графика и визуальные эффекты"
+    pl_PL: "Motion graphics i efekty wizualne"
+    pt_BR: "Motion graphics e efeitos visuais"
+    sv_SE: "Motion graphics och visuella effekter"
+    uk_UA: "Моушн-графіка та візуальні ефекти"
+  description:
+    en_US: "Motion graphics and VFX. A free alternative to After Effects that runs entirely in your browser using WebAssembly."
+    zh_CN: "动态图形与视觉特效。After Effects 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "الرسوم المتحركة والمؤثرات البصرية. بديل مجاني لبرنامج After Effects يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Motion Graphics und visuelle Effekte. Eine kostenlose Alternative zu After Effects, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Motion graphics y efectos visuales. Una alternativa gratuita a After Effects que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Motion design et effets visuels. Une alternative gratuite à After Effects qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Motion graphics és vizuális effektek. Ingyenes alternatíva (After Effects helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Motion graphics ed effetti visivi. Un'alternativa gratuita a After Effects che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Моушн-графика и визуальные эффекты. Бесплатная альтернатива After Effects, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Motion graphics i efekty wizualne. Darmowa alternatywa dla After Effects, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Motion graphics e efeitos visuais. Uma alternativa gratuita ao After Effects que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Motion graphics och visuella effekter. Ett gratis alternativ till After Effects som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Моушн-графіка та візуальні ефекти. Безкоштовна альтернатива After Effects, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/EffectCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/EffectCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/EffectCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/EffectCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/effectcraft
+  repo: https://github.com/storytold/effectcraft
+  support: https://github.com/storytold/effectcraft/issues
+  index: /
+  port_map: "8770"
+  scheme: http

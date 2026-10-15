@@ -1,0 +1,67 @@
+name: figcraft
+
+services:
+  figcraft:
+    image: ghcr.io/berg-maia/figcraft-web:latest
+    container_name: figcraft
+    restart: unless-stopped
+    ports:
+      - "8772:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.figcraft
+  architectures:
+    - amd64
+    - arm64
+  main: figcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: FigCraft
+  tagline:
+    en_US: "Interface design and prototyping"
+    zh_CN: "界面设计与原型制作"
+    ar_SA: "تصميم الواجهات والنماذج الأولية"
+    de_DE: "Oberflächendesign und Prototyping"
+    es_ES: "Diseño de interfaces y prototipado"
+    fr_FR: "Conception d'interfaces et prototypage"
+    hu_HU: "Felülettervezés és prototípus-készítés"
+    it_IT: "Progettazione di interfacce e prototipazione"
+    ru_RU: "Дизайн интерфейсов и прототипирование"
+    pl_PL: "Projektowanie interfejsów i prototypowanie"
+    pt_BR: "Design de interfaces e prototipagem"
+    sv_SE: "Gränssnittsdesign och prototyper"
+    uk_UA: "Дизайн інтерфейсів і прототипування"
+  description:
+    en_US: "Interface design and prototyping. A free alternative to Figma that runs entirely in your browser using WebAssembly."
+    zh_CN: "界面设计与原型制作。Figma 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "تصميم الواجهات والنماذج الأولية. بديل مجاني لبرنامج Figma يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Oberflächendesign und Prototyping. Eine kostenlose Alternative zu Figma, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Diseño de interfaces y prototipado. Una alternativa gratuita a Figma que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Conception d'interfaces et prototypage. Une alternative gratuite à Figma qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Felülettervezés és prototípus-készítés. Ingyenes alternatíva (Figma helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Progettazione di interfacce e prototipazione. Un'alternativa gratuita a Figma che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Дизайн интерфейсов и прототипирование. Бесплатная альтернатива Figma, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Projektowanie interfejsów i prototypowanie. Darmowa alternatywa dla Figma, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Design de interfaces e prototipagem. Uma alternativa gratuita ao Figma que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Gränssnittsdesign och prototyper. Ett gratis alternativ till Figma som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Дизайн інтерфейсів і прототипування. Безкоштовна альтернатива Figma, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FigCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FigCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FigCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FigCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/figcraft
+  repo: https://github.com/storytold/figcraft
+  support: https://github.com/storytold/figcraft/issues
+  index: /
+  port_map: "8772"
+  scheme: http

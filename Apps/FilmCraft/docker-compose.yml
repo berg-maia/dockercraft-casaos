@@ -1,0 +1,67 @@
+name: filmcraft
+
+services:
+  filmcraft:
+    image: ghcr.io/berg-maia/filmcraft-web:latest
+    container_name: filmcraft
+    restart: unless-stopped
+    ports:
+      - "8767:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.filmcraft
+  architectures:
+    - amd64
+    - arm64
+  main: filmcraft
+  author: berg-maia
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: FilmCraft
+  tagline:
+    en_US: "Video editing"
+    zh_CN: "视频剪辑"
+    ar_SA: "تحرير الفيديو"
+    de_DE: "Videobearbeitung"
+    es_ES: "Edición de vídeo"
+    fr_FR: "Montage vidéo"
+    hu_HU: "Videószerkesztés"
+    it_IT: "Montaggio video"
+    ru_RU: "Видеомонтаж"
+    pl_PL: "Edycja wideo"
+    pt_BR: "Edição de vídeo"
+    sv_SE: "Videoredigering"
+    uk_UA: "Відеомонтаж"
+  description:
+    en_US: "Video editing. A free alternative to Premiere Pro that runs entirely in your browser using WebAssembly."
+    zh_CN: "视频剪辑。Premiere Pro 的免费替代品，借助 WebAssembly 完全在浏览器中运行。"
+    ar_SA: "تحرير الفيديو. بديل مجاني لبرنامج Premiere Pro يعمل بالكامل في المتصفح باستخدام WebAssembly."
+    de_DE: "Videobearbeitung. Eine kostenlose Alternative zu Premiere Pro, die über WebAssembly vollständig im Browser läuft."
+    es_ES: "Edición de vídeo. Una alternativa gratuita a Premiere Pro que se ejecuta íntegramente en el navegador mediante WebAssembly."
+    fr_FR: "Montage vidéo. Une alternative gratuite à Premiere Pro qui s'exécute entièrement dans le navigateur grâce à WebAssembly."
+    hu_HU: "Videószerkesztés. Ingyenes alternatíva (Premiere Pro helyett), amely teljes egészében a böngészőben fut, WebAssembly segítségével."
+    it_IT: "Montaggio video. Un'alternativa gratuita a Premiere Pro che funziona interamente nel browser grazie a WebAssembly."
+    ru_RU: "Видеомонтаж. Бесплатная альтернатива Premiere Pro, которая работает прямо в браузере благодаря WebAssembly."
+    pl_PL: "Edycja wideo. Darmowa alternatywa dla Premiere Pro, działająca w całości w przeglądarce dzięki WebAssembly."
+    pt_BR: "Edição de vídeo. Uma alternativa gratuita ao Premiere Pro que roda inteiramente no navegador, usando WebAssembly."
+    sv_SE: "Videoredigering. Ett gratis alternativ till Premiere Pro som körs helt i webbläsaren med WebAssembly."
+    uk_UA: "Відеомонтаж. Безкоштовна альтернатива Premiere Pro, що працює повністю в браузері завдяки WebAssembly."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/icon.svg
+  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
+  # screenshot_link:
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-1.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-2.webp
+  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/FilmCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/filmcraft
+  repo: https://github.com/storytold/filmcraft
+  support: https://github.com/storytold/filmcraft/issues
+  index: /
+  port_map: "8767"
+  scheme: http
