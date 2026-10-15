@@ -26,9 +26,3 @@ App Store -> Add Source -> colar:
 | DeckCraft | 8775 |
 | CADCraft | 8776 |
 | GridCraft | 8777 |
-
-## Versoes
-
-O workflow `Atualizar versões da loja` consulta a ultima release de cada projeto
-oficial e atualiza `version`, `update_at` e a tag da imagem no compose, mas so depois
-que a imagem dessa versao existe no ghcr.io.
