@@ -48,20 +48,31 @@ jobs:
               nums = [int(n) for n in re.findall(r"\d{2,4}", caminho.lower()) if 16 <= int(n) <= 4096]
               return max(nums) if nums else 0
 
-          def escolher(arquivos, slug):
-              """Prefere SVG; sem SVG, o menor PNG com 256 px ou mais (senao o maior)."""
+          def candidatos(arquivos, slug):
+              """Ordem de preferencia: SVG; depois PNG de 256 px ou mais (do menor ao maior);
+              por fim PNGs menores (do maior ao menor). Ignora PNGs de macOS."""
               base = "assets/app-icon/"
               svgs = [a for a in arquivos if a.lower().endswith(".svg")]
-              if svgs:
-                  exato = [a for a in svgs if a.lower() == f"{base}{slug}.svg"]
-                  raiz = sorted(a for a in svgs if a.count("/") == 2)
-                  escalavel = sorted(a for a in svgs if "scalable" in a.lower())
-                  return (exato or raiz or escalavel or sorted(svgs))[0], "svg"
+              exato = [a for a in svgs if a.lower() == f"{base}{slug}.svg"]
+              raiz = sorted(a for a in svgs if a.count("/") == 2 and a not in exato)
+              escalavel = sorted(a for a in svgs if "scalable" in a.lower() and a not in exato + raiz)
+              resto = sorted(a for a in svgs if a not in exato + raiz + escalavel)
               pngs = [a for a in arquivos if a.lower().endswith(".png") and "macos" not in a.lower()]
-              if pngs:
-                  grandes = sorted((tamanho(a), a) for a in pngs if tamanho(a) >= 256)
-                  return (grandes[0][1] if grandes else max(pngs, key=tamanho)), "png"
-              return None, None
+              grandes = [a for _, a in sorted((tamanho(a), a) for a in pngs if tamanho(a) >= 256)]
+              pequenos = sorted((a for a in pngs if tamanho(a) < 256), key=tamanho, reverse=True)
+              return exato + raiz + escalavel + resto + grandes + pequenos
+
+          def tipo(b):
+              """Descobre o formato real pelo conteudo, nao pelo nome."""
+              if b[:4] == b"\x89PNG":
+                  return "png"
+              if b[:3] == b"\xff\xd8\xff":
+                  return "jpg"
+              if b[:4] == b"RIFF" and b[8:12] == b"WEBP":
+                  return "webp"
+              if b"<svg" in b[:4000]:
+                  return "svg"
+              return None
 
           falhas = []
           for f in sorted(glob.glob("Apps/*/docker-compose.yml")):
@@ -78,25 +89,33 @@ jobs:
               if arquivos is None:
                   falhas.append(f"{folder}: nao achei assets/app-icon em {repo}")
                   continue
-              pick, ext = escolher(arquivos, slug)
-              if not pick:
-                  falhas.append(f"{folder}: nenhum SVG ou PNG utilizavel (tem: {', '.join(arquivos)})")
+              lista = candidatos(arquivos, slug)
+              if not lista:
+                  falhas.append(f"{folder}: nenhum SVG ou PNG em assets/app-icon (tem: {', '.join(arquivos)})")
                   continue
 
-              d = gh("api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{repo}/contents/{pick}")
-              ok = d.returncode == 0 and (
-                  b"<svg" in d.stdout[:4000] if ext == "svg" else d.stdout[:4] == b"\x89PNG")
-              if not ok:
-                  falhas.append(f"{folder}: {pick} nao veio como {ext.upper()} valido")
+              dados, ext, pick, motivos = None, None, None, []
+              for c in lista:
+                  d = gh("api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{repo}/contents/{c}")
+                  t = tipo(d.stdout) if d.returncode == 0 else None
+                  if t:
+                      dados, ext, pick = d.stdout, t, c
+                      break
+                  motivos.append(f"{c} (rc={d.returncode}, inicio={d.stdout[:8].hex() or 'vazio'}, "
+                                 f"erro={d.stderr.decode(errors='replace').strip()[:120] or '-'})")
+              if dados is None:
+                  falhas.append(f"{folder}: nenhum candidato valido. Tentei: " + "; ".join(motivos))
                   continue
+              for x in motivos:
+                  print(f"[{folder}] pulei {x}")
 
               dest = f"Apps/{folder}/icon.{ext}"
               antigo = open(dest, "rb").read() if os.path.exists(dest) else None
-              if antigo == d.stdout:
+              if antigo == dados:
                   print(f"[{folder}] {pick}: ja esta igual")
               else:
-                  open(dest, "wb").write(d.stdout)
-                  print(f"[{folder}] {pick} -> {dest} ({len(d.stdout)//1024} KB)")
+                  open(dest, "wb").write(dados)
+                  print(f"[{folder}] {pick} -> {dest} ({len(dados)//1024} KB, formato real: {ext})")
 
               # o compose precisa apontar para a extensao escolhida
               novo = re.sub(r"^(  icon: .*?/icon)\.\w+$", lambda mm: f"{mm.group(1)}.{ext}",
