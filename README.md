@@ -32,9 +32,3 @@ App Store -> Add Source -> colar:
 O workflow `Atualizar versões da loja` consulta a ultima release de cada projeto
 oficial e atualiza `version`, `update_at` e a tag da imagem no compose, mas so depois
 que a imagem dessa versao existe no ghcr.io.
-
-## Imagens da loja
-
-Cada pasta `Apps/<Nome>/` usa `icon.svg` e `screenshot-1.webp` a `screenshot-3.webp`.
-Para exibir as screenshots, remova o `#` das linhas correspondentes no
-`docker-compose.yml` do app.
