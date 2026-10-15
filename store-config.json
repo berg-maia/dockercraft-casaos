@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "store_id": "artcraft-store",
+  "name": {
+    "en_US": "ArtCraft Store",
+    "pt_BR": "ArtCraft Store"
+  },
+  "description": {
+    "en_US": "ArtCraft applications for your private cloud.",
+    "pt_BR": "Aplicativos ArtCraft para sua nuvem privada."
+  },
+  "maintainer": "Berg",
+  "url": "https://github.com/berg-maia/dockercraft-casaos"
+}
