@@ -2,7 +2,7 @@ name: photocraft
 
 services:
   photocraft:
-    image: ghcr.io/berg-maia/photocraft-web:latest
+    image: ghcr.io/berg-maia/photocraft-web:0.9.0
     container_name: photocraft
     restart: unless-stopped
     ports:
@@ -61,6 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/photocraft
   repo: https://github.com/storytold/photocraft
   support: https://github.com/storytold/photocraft/issues
+  version: "0.9.0"
+  update_at: "2026-10-14"
   index: /
   port_map: "8765"
   scheme: http
