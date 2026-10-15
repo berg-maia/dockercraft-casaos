@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Media",
+    "font": "play-circle-outline",
+    "description": "Media Apps"
+  },
+  {
+    "name": "Productivity",
+    "font": "toolbox-outline",
+    "description": "Productivity Apps"
+  }
+]
