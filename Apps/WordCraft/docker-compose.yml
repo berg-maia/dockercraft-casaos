@@ -54,11 +54,10 @@ x-casaos:
     sv_SE: "Skrivande och dokumentdesign; en open source-reimplementering av Microsoft Word enligt clean-room-metoden, omskriven i rent Rust."
     uk_UA: "Тексти та оформлення документів; відкрита clean-room-реімплементація Microsoft Word, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/icon.svg
-  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
-  # screenshot_link:
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-1.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-2.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-3.webp
+  screenshot_link:
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-1.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-2.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/WordCraft/screenshot-3.png
   website: https://getartcraft.com/apps/wordcraft
   repo: https://github.com/storytold/wordcraft
   support: https://github.com/storytold/wordcraft/issues
