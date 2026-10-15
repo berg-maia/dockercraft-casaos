@@ -3,11 +3,33 @@
   "store_id": "artcraft-store",
   "name": {
     "en_US": "ArtCraft Store",
-    "pt_BR": "ArtCraft Store"
+    "zh_CN": "ArtCraft 商店",
+    "ar_SA": "متجر ArtCraft",
+    "de_DE": "ArtCraft Store",
+    "es_ES": "Tienda ArtCraft",
+    "fr_FR": "Boutique ArtCraft",
+    "hu_HU": "ArtCraft Áruház",
+    "it_IT": "ArtCraft Store",
+    "ru_RU": "Магазин ArtCraft",
+    "pl_PL": "Sklep ArtCraft",
+    "pt_BR": "Loja ArtCraft",
+    "sv_SE": "ArtCraft Butik",
+    "uk_UA": "Магазин ArtCraft"
   },
   "description": {
     "en_US": "ArtCraft applications for your private cloud.",
-    "pt_BR": "Aplicativos ArtCraft para sua nuvem privada."
+    "zh_CN": "适用于您的私有云的 ArtCraft 应用程序。",
+    "ar_SA": "تطبيقات ArtCraft للسحابة الخاصة بك.",
+    "de_DE": "ArtCraft-Anwendungen für Ihre private Cloud.",
+    "es_ES": "Aplicaciones ArtCraft para tu nube privada.",
+    "fr_FR": "Applications ArtCraft pour votre cloud privé.",
+    "hu_HU": "ArtCraft alkalmazások az Ön privát felhőjéhez.",
+    "it_IT": "Applicazioni ArtCraft per il tuo cloud privato.",
+    "ru_RU": "Приложения ArtCraft для вашего частного облака.",
+    "pl_PL": "Aplikacje ArtCraft dla Twojej prywatnej chmury.",
+    "pt_BR": "Aplicativos ArtCraft para sua nuvem privada.",
+    "sv_SE": "ArtCraft-appar för ditt privata moln.",
+    "uk_UA": "Застосунки ArtCraft для вашої приватної хмари."
   },
   "maintainer": "Berg",
   "url": "https://github.com/berg-maia/dockercraft-casaos"
