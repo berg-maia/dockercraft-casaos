@@ -54,11 +54,10 @@ x-casaos:
     sv_SE: "Kalkylblad och data; en open source-reimplementering av Microsoft Excel enligt clean-room-metoden, omskriven i rent Rust."
     uk_UA: "Електронні таблиці та дані; відкрита clean-room-реімплементація Microsoft Excel, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/icon.svg
-  # Quando tiver as screenshots, suba-as nesta pasta e remova o "#":
-  # screenshot_link:
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-1.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-2.webp
-  #   - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-3.webp
+  screenshot_link:
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-1.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-2.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/GridCraft/screenshot-3.png
   website: https://getartcraft.com/apps/gridcraft
   repo: https://github.com/storytold/gridcraft
   support: https://github.com/storytold/gridcraft/issues
