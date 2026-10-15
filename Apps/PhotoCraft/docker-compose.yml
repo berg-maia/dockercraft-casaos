@@ -1,0 +1,31 @@
+name: photocraft
+
+services:
+  photocraft:
+    container_name: photocraft
+    image: ghcr.io/berg-maia/photocraft-web:latest
+    restart: unless-stopped
+    ports:
+      - "8765:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_us: "Web UI (container port 80)"
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: photocraft
+  description:
+    en_us: "Layers, masks, adjustment layers, layer styles, type, vectors and brushes in a native app written entirely in Rust. Open source, offline, and yours."
+  tagline:
+    en_us: "Editor de imagens no navegador"
+  author: "ArtCraft"
+  title:
+    en_us: "PhotoCraft"
+  category: "Media"
+  port_map: "8765"
+  scheme: "http"
+  icon: "./icon.svg"
