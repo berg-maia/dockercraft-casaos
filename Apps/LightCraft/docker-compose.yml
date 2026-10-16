@@ -55,9 +55,9 @@ x-casaos:
     uk_UA: "Фотобібліотека та обробка RAW; відкрита clean-room-реімплементація Adobe Lightroom, заново написана на чистому Rust."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/icon.svg
   screenshot_link:
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-1.png
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-2.png
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-3.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-1.jpg
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-2.jpg
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/LightCraft/screenshot-3.jpg
   website: https://getartcraft.com/apps/lightcraft
   repo: https://github.com/storytold/lightcraft
   support: https://github.com/storytold/lightcraft/issues
