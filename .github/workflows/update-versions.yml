@@ -2,7 +2,7 @@ name: Atualizar versões da loja
 
 on:
   schedule:
-    - cron: '30 */6 * * *'
+    - cron: '0 1,7,13,19 * * *'
   workflow_dispatch:
 
 permissions:
