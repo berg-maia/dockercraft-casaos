@@ -22,7 +22,6 @@ jobs:
         with:
           source: .
           output: dist
-          base-url: https://berg-maia.github.io/dockercraft-casaos/
           report-json: out/build-report.json
 
       - name: Upload build report
