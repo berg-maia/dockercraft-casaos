@@ -17,22 +17,42 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Build CasaOS App Store
+      - name: Build CasaOS App Store v2
+        id: build_v2
         uses: IceWhaleTech/build-appstore-action@main
         with:
           source: .
           output: dist
-          report-json: out/build-report.json
+          report-json: out/build-v2-report.json
+          report-title: Build V2 Store Report
 
-      - name: Upload build report
+      - name: Upload build v2 report
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: build-report
-          path: out/build-report.json
+          name: build-v2-report
+          path: out/build-v2-report.json
           if-no-files-found: warn
 
-      - name: Upload store
+      - name: Build legacy v1 store ZIP
+        id: build_v1
+        run: |
+          git clone --depth 1 https://github.com/IceWhaleTech/CasaOS-AppStore.git /tmp/CasaOS-AppStore
+          cd /tmp/CasaOS-AppStore
+          chmod +x scripts/build_store_v1.sh
+          ./scripts/build_store_v1.sh \
+            "${GITHUB_WORKSPACE}" \
+            "${GITHUB_WORKSPACE}/dist/store/main.zip"
+
+      - name: Upload legacy v1 store
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: artcraft-store-v1
+          path: dist/store/main.zip
+          if-no-files-found: error
+
+      - name: Upload complete store
         if: always()
         uses: actions/upload-artifact@v6
         with:
