@@ -49,25 +49,6 @@ Each app uses its own host port, so all of them can run side by side.
 - **What this repository contains:** only packaging for CasaOS (compose files, store metadata and GitHub Actions workflows). It does not contain or modify the source code of the applications. The Docker images are built from each project's official web release (`*-web-<version>.zip`) and served with nginx.
 - **Third-party trademarks:** Adobe, Photoshop, Illustrator, Premiere Pro, Lightroom, Acrobat, After Effects and InDesign are trademarks of Adobe Inc.; Microsoft, Word, PowerPoint and Excel are trademarks of Microsoft Corporation; Figma is a trademark of Figma, Inc.; Avid and Pro Tools are trademarks of Avid Technology, Inc.; Autodesk and AutoCAD are trademarks of Autodesk, Inc. They are mentioned only to describe what each ArtCraft app reimplements, as in the projects' own descriptions. This store is not affiliated with or endorsed by any of these companies.
 
-## How it works
-
-The container images are built by a companion repository, [berg-maia/dockercraft](https://github.com/berg-maia/dockercraft), and published to `ghcr.io/berg-maia/<app>-web`. This repository then keeps the store in sync with them using GitHub Actions:
-
-| Workflow | What it does | When |
-|---|---|---|
-| `update-versions.yml` | Reads the latest release of each official project and updates `version`, `update_at` and the image tag in the app's compose file, but only after that image exists. | Every 6 hours |
-| `sync-icons.yml` | Copies each project's official icon from `assets/app-icon` into `Apps/<App>/`. | Weekly and on demand |
-
-## Repository layout
-
-```
-Apps/<App>/docker-compose.yml   CasaOS app definition (ports, metadata, translations)
-Apps/<App>/icon.*               App icon, synced from the official project
-Apps/<App>/screenshot-*.*       Screenshots shown in the store
-category-list.json              Store categories
-.github/workflows/              Automation described above
-```
-
 ## Issues
 
 Problems with installing an app from this store (ports, icons, versions, translations) belong in this repository's issues. Problems inside an application belong to the project's own repository.
