@@ -8,6 +8,19 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **ArtCra
 - Website: <https://getartcraft.com>
 - GitHub organization: <https://github.com/storytold>
 
+## Install
+
+1. Open the CasaOS dashboard and go to **App Store**.
+2. Click **Add Source** and paste:
+
+   ```
+   https://github.com/berg-maia/dockercraft-casaos/archive/refs/heads/main.zip
+   ```
+
+3. Pick an app from the new source and install it. Open it at `http://<your-server-ip>:<port>` using the port from the table above.
+
+Each app uses its own host port, so all of them can run side by side.
+
 ## Apps
 
 | App | What it is | Website | Source code | Port |
@@ -27,19 +40,6 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **ArtCra
 | **GridCraft** | Spreadsheets and data; a reimplementation of Microsoft Excel | [getartcraft.com/apps/gridcraft](https://getartcraft.com/apps/gridcraft) | [storytold/gridcraft](https://github.com/storytold/gridcraft) | 8777 |
 
 App descriptions follow the official project descriptions. Open each app's website or repository for its full documentation.
-
-## Install
-
-1. Open the CasaOS dashboard and go to **App Store**.
-2. Click **Add Source** and paste:
-
-   ```
-   https://github.com/berg-maia/dockercraft-casaos/archive/refs/heads/main.zip
-   ```
-
-3. Pick an app from the new source and install it. Open it at `http://<your-server-ip>:<port>` using the port from the table above.
-
-Each app uses its own host port, so all of them can run side by side.
 
 ## Credits and rights
 
