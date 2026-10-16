@@ -17,7 +17,7 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **ArtCra
    https://github.com/berg-maia/dockercraft-casaos/archive/refs/heads/main.zip
    ```
 
-3. Pick an app from the new source and install it. Open it at `http://<your-server-ip>:<port>` using the port from the table above.
+3. Pick an app from the new source and install it. Open it at `http://<your-server-ip>:<port>` using the port from the table bellow.
 
 Each app uses its own host port, so all of them can run side by side.
 
