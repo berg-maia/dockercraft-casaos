@@ -9,7 +9,7 @@ services:
       - "8765:80"
       
     volumes:
-      - /DATA/AppData/$AppID/fonts:/usr/share/nginx/html/fonts
+      - /DATA/AppData/ArtCraft/$AppID/fonts:/usr/share/nginx/html/fonts
     x-casaos:
       ports:
         - container: "80"
