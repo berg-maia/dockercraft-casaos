@@ -16,6 +16,8 @@ services:
           description:
             en_US: "Web UI"
             pt_BR: "Interface web"
+   
+   command: ["sh", "-c", "wget -qO /tmp/fonts-manifest.sh https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/scripts/fonts-manifest.sh && mv /tmp/fonts-manifest.sh /opt/fonts-manifest.sh; sh /opt/fonts-manifest.sh & exec nginx -g 'daemon off;'"]
 
 x-casaos:
   id: io.github.berg-maia.photocraft
