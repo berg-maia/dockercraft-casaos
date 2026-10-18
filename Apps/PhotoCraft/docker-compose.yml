@@ -7,6 +7,15 @@ services:
     restart: unless-stopped
     ports:
       - "8765:80"
+    volumes:
+      - /DATA/AppData/ArtCraft/$AppID/fonts:/usr/share/nginx/html/fonts
+    command:
+      - sh
+      - -c
+      - |
+        wget -qO /tmp/fonts-manifest.sh https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/scripts/fonts-manifest.sh && mv /tmp/fonts-manifest.sh /opt/fonts-manifest.sh || echo "could not download fonts-manifest.sh"
+        [ -f /opt/fonts-manifest.sh ] && sh /opt/fonts-manifest.sh &
+        exec nginx -g 'daemon off;'
     x-casaos:
       ports:
         - container: "80"
