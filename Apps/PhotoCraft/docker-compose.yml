@@ -7,6 +7,9 @@ services:
     restart: unless-stopped
     ports:
       - "8765:80"
+      
+    volumes:
+      - /DATA/AppData/$AppID/fonts:/usr/share/nginx/html/fonts
     x-casaos:
       ports:
         - container: "80"
