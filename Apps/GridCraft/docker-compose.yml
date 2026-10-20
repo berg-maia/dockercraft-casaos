@@ -2,7 +2,7 @@ name: gridcraft
 
 services:
   gridcraft:
-    image: ghcr.io/berg-maia/gridcraft-web:0.8.0
+    image: ghcr.io/berg-maia/gridcraft-web:0.9.0
     container_name: gridcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/gridcraft
   repo: https://github.com/storytold/gridcraft
   support: https://github.com/storytold/gridcraft/issues
-  version: "0.8.0"
-  update_at: "2026-10-18"
+  version: "0.9.0"
+  update_at: "2026-10-20"
   index: /
   port_map: "8777"
   scheme: http
