@@ -2,7 +2,7 @@ name: effectcraft
 
 services:
   effectcraft:
-    image: ghcr.io/berg-maia/effectcraft-web:0.13.0
+    image: ghcr.io/berg-maia/effectcraft-web:0.14.0
     container_name: effectcraft
     restart: unless-stopped
     ports:
@@ -61,7 +61,7 @@ x-casaos:
   website: https://getartcraft.com/apps/effectcraft
   repo: https://github.com/storytold/effectcraft
   support: https://github.com/storytold/effectcraft/issues
-  version: "0.13.0"
+  version: "0.14.0"
   update_at: "2026-10-21"
   index: /
   port_map: "8770"

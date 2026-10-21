@@ -2,7 +2,7 @@ name: soundcraft
 
 services:
   soundcraft:
-    image: ghcr.io/berg-maia/soundcraft-web:0.10.0
+    image: ghcr.io/berg-maia/soundcraft-web:0.11.0
     container_name: soundcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/soundcraft
   repo: https://github.com/storytold/soundcraft
   support: https://github.com/storytold/soundcraft/issues
-  version: "0.10.0"
-  update_at: "2026-10-20"
+  version: "0.11.0"
+  update_at: "2026-10-21"
   index: /
   port_map: "8774"
   scheme: http
