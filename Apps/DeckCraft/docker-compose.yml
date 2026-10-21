@@ -2,7 +2,7 @@ name: deckcraft
 
 services:
   deckcraft:
-    image: ghcr.io/berg-maia/deckcraft-web:0.8.0
+    image: ghcr.io/berg-maia/deckcraft-web:0.9.0
     container_name: deckcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/deckcraft
   repo: https://github.com/storytold/deckcraft
   support: https://github.com/storytold/deckcraft/issues
-  version: "0.8.0"
-  update_at: "2026-10-18"
+  version: "0.9.0"
+  update_at: "2026-10-21"
   index: /
   port_map: "8775"
   scheme: http

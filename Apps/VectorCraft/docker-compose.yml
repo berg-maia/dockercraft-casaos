@@ -2,7 +2,7 @@ name: vectorcraft
 
 services:
   vectorcraft:
-    image: ghcr.io/berg-maia/vectorcraft-web:0.13.1
+    image: ghcr.io/berg-maia/vectorcraft-web:0.14.0
     container_name: vectorcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/vectorcraft
   repo: https://github.com/storytold/vectorcraft
   support: https://github.com/storytold/vectorcraft/issues
-  version: "0.13.1"
-  update_at: "2026-10-18"
+  version: "0.14.0"
+  update_at: "2026-10-21"
   index: /
   port_map: "8766"
   scheme: http

@@ -2,7 +2,7 @@ name: lightcraft
 
 services:
   lightcraft:
-    image: ghcr.io/berg-maia/lightcraft-web:0.9.1
+    image: ghcr.io/berg-maia/lightcraft-web:0.10.0
     container_name: lightcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/lightcraft
   repo: https://github.com/storytold/lightcraft
   support: https://github.com/storytold/lightcraft/issues
-  version: "0.9.1"
-  update_at: "2026-10-18"
+  version: "0.10.0"
+  update_at: "2026-10-21"
   index: /
   port_map: "8768"
   scheme: http
