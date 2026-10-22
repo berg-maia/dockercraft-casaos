@@ -2,7 +2,7 @@ name: designcraft
 
 services:
   designcraft:
-    image: ghcr.io/berg-maia/designcraft-web:0.11.0
+    image: ghcr.io/berg-maia/designcraft-web:0.12.0
     container_name: designcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/designcraft
   repo: https://github.com/storytold/designcraft
   support: https://github.com/storytold/designcraft/issues
-  version: "0.11.0"
-  update_at: "2026-10-21"
+  version: "0.12.0"
+  update_at: "2026-10-22"
   index: /
   port_map: "8771"
   scheme: http
