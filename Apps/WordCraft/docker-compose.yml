@@ -2,7 +2,7 @@ name: wordcraft
 
 services:
   wordcraft:
-    image: ghcr.io/berg-maia/wordcraft-web:0.11.0
+    image: ghcr.io/berg-maia/wordcraft-web:0.12.0
     container_name: wordcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/wordcraft
   repo: https://github.com/storytold/wordcraft
   support: https://github.com/storytold/wordcraft/issues
-  version: "0.11.0"
-  update_at: "2026-10-25"
+  version: "0.12.0"
+  update_at: "2026-10-28"
   index: /
   port_map: "8773"
   scheme: http
