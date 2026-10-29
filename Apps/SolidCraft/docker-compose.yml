@@ -53,11 +53,10 @@ x-casaos:
 	pt_BR: "CAD paramétrico de código aberto."
 	sv_SE: "Parametrisk CAD med öppen källkod."
 	uk_UA: "Параметрична САПР із відкритим вихідним кодом."
-  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/icon.png
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/icon.svg
   screenshot_link:
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-1.png
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-2.png
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-3.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-1.jpg
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-2.jpg
   website: https://solidcraft.io/showcase
   repo: https://github.com/tangency-labs/solidcraft
   support: https://github.com/tangency-labs/solidcraft/issues
