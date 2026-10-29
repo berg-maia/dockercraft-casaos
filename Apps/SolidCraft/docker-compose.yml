@@ -41,22 +41,22 @@ x-casaos:
     uk_UA: "Автоматизоване проєктування та креслення"
   description:
     en_US: "Open-source parametric CAD."
-	zh_CN: "开源参数化 CAD。"
-	ar_SA: "تصميم بمساعدة الحاسوب بارامتري مفتوح المصدر."
-	de_DE: "Open-Source-Parametrisches CAD."
-	es_ES: "CAD paramétrico de código abierto."
-	fr_FR: "CAO paramétrique open source."
-	hu_HU: "Nyílt forráskódú parametrikus CAD."
-	it_IT: "CAD parametrico open source."
-	ru_RU: "Параметрическая САПР с открытым исходным кодом."
-	pl_PL: "Parametryczny CAD o otwartym kodzie źródłowym."
-	pt_BR: "CAD paramétrico de código aberto."
-	sv_SE: "Parametrisk CAD med öppen källkod."
-	uk_UA: "Параметрична САПР із відкритим вихідним кодом."
+    zh_CN: "开源参数化 CAD。"
+    ar_SA: "تصميم بمساعدة الحاسوب بارامتري مفتوح المصدر."
+    de_DE: "Open-Source-Parametrisches CAD."
+    es_ES: "CAD paramétrico de código abierto."
+    fr_FR: "CAO paramétrique open source."
+    hu_HU: "Nyílt forráskódú parametrikus CAD."
+    it_IT: "CAD parametrico open source."
+    ru_RU: "Параметрическая САПР с открытым исходным кодом."
+    pl_PL: "Parametryczny CAD o otwartym kodzie źródłowym."
+    pt_BR: "CAD paramétrico de código aberto."
+    sv_SE: "Parametrisk CAD med öppen källkod."
+    uk_UA: "Параметрична САПР із відкритим вихідним кодом."
   icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/icon.svg
   screenshot_link:
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-1.jpg
-     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-2.jpg
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-1.jpg
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-2.jpg
   website: https://solidcraft.io/showcase
   repo: https://github.com/tangency-labs/solidcraft
   support: https://github.com/tangency-labs/solidcraft/issues
