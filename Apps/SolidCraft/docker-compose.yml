@@ -1,0 +1,68 @@
+name: solidcraft
+
+services:
+  solidcraft:
+    image: ghcr.io/berg-maia/solidcraft-web:0.14.0
+    container_name: solidcraft
+    restart: unless-stopped
+    ports:
+      - "8778:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.solidcraft
+  architectures:
+    - amd64
+    - arm64
+  main: solidcraft
+  author: Tangency Labs
+  developer: Tangency Labs
+  category: Productivity
+  title:
+    en_US: SolidCraft
+  tagline:
+    en_US: "Computer-aided design and drafting"
+    zh_CN: "计算机辅助设计与绘图"
+    ar_SA: "التصميم والرسم بمساعدة الحاسوب"
+    de_DE: "Computergestütztes Konstruieren und Zeichnen"
+    es_ES: "Diseño y dibujo asistidos por ordenador"
+    fr_FR: "Conception et dessin assistés par ordinateur"
+    hu_HU: "Számítógéppel segített tervezés és rajzolás"
+    it_IT: "Progettazione e disegno assistiti da computer"
+    ru_RU: "Автоматизированное проектирование и черчение"
+    pl_PL: "Projektowanie i kreślenie wspomagane komputerowo"
+    pt_BR: "Projeto e desenho assistidos por computador"
+    sv_SE: "Datorstödd konstruktion och ritning"
+    uk_UA: "Автоматизоване проєктування та креслення"
+  description:
+    en_US: "Open-source parametric CAD."
+	zh_CN: "开源参数化 CAD。"
+	ar_SA: "تصميم بمساعدة الحاسوب بارامتري مفتوح المصدر."
+	de_DE: "Open-Source-Parametrisches CAD."
+	es_ES: "CAD paramétrico de código abierto."
+	fr_FR: "CAO paramétrique open source."
+	hu_HU: "Nyílt forráskódú parametrikus CAD."
+	it_IT: "CAD parametrico open source."
+	ru_RU: "Параметрическая САПР с открытым исходным кодом."
+	pl_PL: "Parametryczny CAD o otwartym kodzie źródłowym."
+	pt_BR: "CAD paramétrico de código aberto."
+	sv_SE: "Parametrisk CAD med öppen källkod."
+	uk_UA: "Параметрична САПР із відкритим вихідним кодом."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/icon.png
+  screenshot_link:
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-1.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-2.png
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/screenshot-3.png
+  website: https://solidcraft.io/showcase
+  repo: https://github.com/tangency-labs/solidcraft
+  support: https://github.com/tangency-labs/solidcraft/issues
+  version: "0.14.0"
+  update_at: "2026-10-28"
+  index: /
+  port_map: "8778"
+  scheme: http
