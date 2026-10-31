@@ -2,7 +2,7 @@ name: figcraft
 
 services:
   figcraft:
-    image: ghcr.io/berg-maia/figcraft-web:0.12.1
+    image: ghcr.io/berg-maia/figcraft-web:0.13.1
     container_name: figcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/figcraft
   repo: https://github.com/storytold/figcraft
   support: https://github.com/storytold/figcraft/issues
-  version: "0.12.1"
-  update_at: "2026-10-28"
+  version: "0.13.1"
+  update_at: "2026-10-31"
   index: /
   port_map: "8772"
   scheme: http

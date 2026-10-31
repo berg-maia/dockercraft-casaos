@@ -2,7 +2,7 @@ name: filmcraft
 
 services:
   filmcraft:
-    image: ghcr.io/berg-maia/filmcraft-web:0.14.0
+    image: ghcr.io/berg-maia/filmcraft-web:0.15.0
     container_name: filmcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/filmcraft
   repo: https://github.com/storytold/filmcraft
   support: https://github.com/storytold/filmcraft/issues
-  version: "0.14.0"
-  update_at: "2026-10-28"
+  version: "0.15.0"
+  update_at: "2026-10-31"
   index: /
   port_map: "8767"
   scheme: http

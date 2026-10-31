@@ -2,7 +2,7 @@ name: solidcraft
 
 services:
   solidcraft:
-    image: ghcr.io/berg-maia/solidcraft-web:0.27.1
+    image: ghcr.io/berg-maia/solidcraft-web:0.28.0
     container_name: solidcraft
     restart: unless-stopped
     ports:
@@ -60,8 +60,8 @@ x-casaos:
   website: https://solidcraft.io/showcase
   repo: https://github.com/tangency-labs/solidcraft
   support: https://github.com/tangency-labs/solidcraft/issues
-  version: "0.27.1"
-  update_at: "2026-10-30"
+  version: "0.28.0"
+  update_at: "2026-10-31"
   index: /
   port_map: "8778"
   scheme: http
