@@ -1,12 +1,12 @@
 # dockercraft-casaos
 
-An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **ArtCraft** suite: open-source, clean-room reimplementations of well-known creative and office applications, rebuilt in pure Rust and served in your browser.
+An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **Craft** applications: open-source, clean-room reimplementations of well-known creative and office applications, rebuilt in pure Rust and served in your browser.
 
-> **All credit for the applications goes to the [ArtCraft Team](https://getartcraft.com) and the contributors of each project.**
-> This repository only packages their work for CasaOS. It is not an official ArtCraft repository.
-
-- Website: <https://getartcraft.com>
-- GitHub organization: <https://github.com/storytold>
+> **Application credits:**
+> - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
+> - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and its contributors.
+>
+> This repository only packages their work for CasaOS. It is not an official ArtCraft or Tangency Labs repository.
 
 ## Install
 
@@ -47,11 +47,12 @@ App descriptions follow the official project descriptions. Open each app's websi
 
 ## Credits and rights
 
-- **Authors:** the applications are created by the **ArtCraft Team and the contributors of each project**. Please direct feature requests and application bugs to the project's own repository, linked in the table above.
-- **License:** every ArtCraft project is open source under **MIT OR Apache-2.0**, with the copyright line "Copyright (c) 2026 ArtCraft Team and the *&lt;App&gt;* contributors". The license texts (`LICENSE-MIT`, `LICENSE-APACHE`) and the `NOTICE` file are in the root of each project's repository.
-- **Names, icons and screenshots:** the app names, icons and screenshots belong to ArtCraft and its contributors. The icons are copied from each project's `assets/app-icon` folder, and the screenshots from its `docs/images` folder. Credits for the media shown inside the screenshots are kept by the projects in that same folder (for example `SOURCES.md` or `*.attribution` files).
-- **What this repository contains:** only packaging for CasaOS (compose files, store metadata and GitHub Actions workflows). It does not contain or modify the source code of the applications. The Docker images are built from each project's official web release (`*-web-<version>.zip`) and served with nginx.
-- **Third-party trademarks:** Adobe, Photoshop, Illustrator, Premiere Pro, Lightroom, Acrobat, After Effects and InDesign are trademarks of Adobe Inc.; Microsoft, Word, PowerPoint and Excel are trademarks of Microsoft Corporation; Figma is a trademark of Figma, Inc.; Avid and Pro Tools are trademarks of Avid Technology, Inc.; Autodesk and AutoCAD are trademarks of Autodesk, Inc. They are mentioned only to describe what each ArtCraft app reimplements, as in the projects' own descriptions. This store is not affiliated with or endorsed by any of these companies.
+- **Authors and contributors:** applications included in this repository are developed and maintained by their respective authors, teams, and organizations. Credits are listed below and updated as new projects are added:
+  - **ArtCraft Team:** ArtCraft applications and contributions.
+  - **Tangency Labs:** SolidCraft.
+- **Licenses:** each application is distributed under its respective license. Please refer to the original project's repository for license information and applicable terms.
+- **Names, logos and icons:** belong to their respective authors, developers, organizations, or rights holders.
+- **Third-party trademarks:** product names and trademarks belong to their respective owners. They are mentioned solely for identification and descriptive purposes. This repository is not affiliated with or endorsed by these companies unless explicitly stated.
 
 ## Issues
 
