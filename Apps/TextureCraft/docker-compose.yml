@@ -2,7 +2,7 @@ name: texturecraft
 
 services:
   texturecraft:
-    image: ghcr.io/berg-maia/texturecraft-web:latest
+    image: ghcr.io/berg-maia/texturecraft-web:0.2.0
     container_name: texturecraft
     restart: unless-stopped
     ports:
@@ -61,7 +61,7 @@ x-casaos:
   website: https://getartcraft.com/apps/texturecraft
   repo: https://github.com/storytold/texturecraft
   support: https://github.com/storytold/texturecraft/issues
-  version: "1.0.0"
+  version: "0.2.0"
   update_at: "2026-11-01"
   index: /
   port_map: "8779"
