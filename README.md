@@ -1,6 +1,6 @@
 # dockercraft-casaos
 
-An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **Craft** applications: open-source, clean-room reimplementations of well-known creative and office applications, rebuilt in pure Rust and served in your browser.
+An unofficial [CasaOS](https://casaos.zimaspace.com/) | [ReCasaOS](https://github.com/ReCasaOS/CasaOS) app store for the **Craft** applications: open-source, clean-room reimplementations of well-known creative and office applications, rebuilt in pure Rust and served in your browser.
 
 > **Application credits:**
 > - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
