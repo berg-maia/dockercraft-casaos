@@ -6,7 +6,7 @@ services:
     container_name: craft-anything
     restart: unless-stopped
     ports:
-      - "8779:80"
+      - "8778:80"
     x-casaos:
       ports:
         - container: "80"
@@ -64,5 +64,5 @@ x-casaos:
   version: "0.2.0"
   update_at: "2026-11-01"
   index: /
-  port_map: "8779"
+  port_map: "8778"
   scheme: http
