@@ -25,9 +25,9 @@ Each app uses its own host port, so all of them can run side by side.
 >
 > **Via SSH:**
 > Connect to your CasaOS device via SSH and run:
-> ```bash
-> sudo systemctl restart casaos-app-management
-> `
+   ```
+   sudo systemctl restart casaos-app-management
+   ```
 
 ## Apps
 
