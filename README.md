@@ -7,7 +7,7 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) | [ReCasaOS](https://githu
 > - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and its contributors.
 > - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
 >
-> This repository only packages their work for CasaOS. It is not an official ArtCraft or Tangency Labs repository.
+> This repository only packages their work for CasaOS | ReCasaOS. It is not an official repository.
 
 ## Install
 
