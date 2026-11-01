@@ -6,7 +6,7 @@ services:
     container_name: solidcraft
     restart: unless-stopped
     ports:
-      - "8778:80"
+      - "8764:80"
     x-casaos:
       ports:
         - container: "80"
@@ -63,5 +63,5 @@ x-casaos:
   version: "0.29.0"
   update_at: "2026-11-01"
   index: /
-  port_map: "8778"
+  port_map: "8764"
   scheme: http
