@@ -1,0 +1,68 @@
+name: craft-anything
+
+services:
+  craft-anything:
+    image: ghcr.io/berg-maia/craft-anything-web:0.16.1
+    container_name: craft-anything
+    restart: unless-stopped
+    ports:
+      - "8779:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.craft-anything
+  architectures:
+    - amd64
+    - arm64
+  main: craft-anything
+  author: ArtCraft
+  developer: ArtCraft
+  category: Productivity
+  title:
+    en_US: Craft-Anything
+  tagline:
+    en_US: "Craft your own project"
+    zh_CN: "打造属于你自己的项目"
+    ar_SA: "أنشئ مشروعك الخاص"
+    de_DE: "Gestalte dein eigenes Projekt"
+    es_ES: "Crea tu propio proyecto"
+    fr_FR: "Créez votre propre projet"
+    hu_HU: "Készítsd el saját projektedet"
+    it_IT: "Crea il tuo progetto"
+    ru_RU: "Создайте собственный проект"
+    pl_PL: "Stwórz własny projekt"
+    pt_BR: "Crie seu próprio projeto"
+    sv_SE: "Skapa ditt eget projekt"
+    uk_UA: "Створіть власний проєкт"
+  description:
+    en_US: "Study websites, apps, games and files with evidence-backed tools, then work with a coding agent to build and check your own project."
+    zh_CN: "使用有证据支持的工具研究网站、应用、游戏和文件，然后与编程代理协作，构建并检查自己的项目。"
+    ar_SA: "ادرس مواقع الويب والتطبيقات والألعاب والملفات باستخدام أدوات مدعومة بالأدلة، ثم اعمل مع وكيل برمجي لبناء مشروعك الخاص والتحقق منه."
+    de_DE: "Untersuche Websites, Apps, Spiele und Dateien mit evidenzbasierten Werkzeugen und arbeite anschließend mit einem Programmieragenten zusammen, um dein eigenes Projekt zu erstellen und zu überprüfen."
+    es_ES: "Analiza sitios web, aplicaciones, juegos y archivos con herramientas respaldadas por evidencias y trabaja después con un agente de programación para crear y comprobar tu propio proyecto."
+    fr_FR: "Étudiez des sites web, des applications, des jeux et des fichiers à l'aide d'outils fondés sur des preuves, puis travaillez avec un agent de programmation pour créer et vérifier votre propre projet."
+    hu_HU: "Vizsgálj weboldalakat, alkalmazásokat, játékokat és fájlokat bizonyítékokon alapuló eszközökkel, majd dolgozz együtt egy kódoló ügynökkel saját projekted elkészítésén és ellenőrzésén."
+    it_IT: "Esamina siti web, app, giochi e file con strumenti basati su prove, quindi collabora con un agente di programmazione per creare e verificare il tuo progetto."
+    ru_RU: "Изучайте веб-сайты, приложения, игры и файлы с помощью инструментов, основанных на фактических данных, а затем работайте с программным агентом, чтобы создавать и проверять собственные проекты."
+    pl_PL: "Analizuj strony internetowe, aplikacje, gry i pliki za pomocą narzędzi opartych na dowodach, a następnie współpracuj z agentem programistycznym, aby tworzyć i sprawdzać własny projekt."
+    pt_BR: "Estude sites, aplicativos, jogos e arquivos com ferramentas baseadas em evidências e, em seguida, trabalhe com um agente de programação para criar e verificar seu próprio projeto."
+    sv_SE: "Utforska webbplatser, appar, spel och filer med evidensbaserade verktyg och samarbeta sedan med en kodningsagent för att bygga och kontrollera ditt eget projekt."
+    uk_UA: "Досліджуйте вебсайти, застосунки, ігри та файли за допомогою інструментів, що спираються на докази, а потім працюйте з агентом програмування, щоб створити та перевірити власний проєкт."
+  icon: https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Craft-Anything/icon.svg
+  screenshot_link:
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Craft-Anything/screenshot-1.png
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Craft-Anything/screenshot-2.png
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Craft-Anything/screenshot-3.png
+  website: https://getartcraft.com/apps/craft-anything
+  repo: https://github.com/storytold/craft-anything
+  support: https://github.com/storytold/craft-anything/issues
+  version: "0.16.1"
+  update_at: "2026-10-31"
+  index: /
+  port_map: "8779"
+  scheme: http
