@@ -20,9 +20,9 @@ x-casaos:
     - amd64
     - arm64
   main: texturecraft
-  author: Storytold
+  author: ArtCraft
   developer: ArtCraft
-  category: Productivity
+  category: Media
   title:
     en_US: TextureCraft
   tagline:
