@@ -5,6 +5,7 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) | [ReCasaOS](https://githu
 > **Application credits:**
 > - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
 > - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and its contributors.
+> - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
 >
 > This repository only packages their work for CasaOS. It is not an official ArtCraft or Tangency Labs repository.
 
@@ -60,6 +61,7 @@ App descriptions follow the official project descriptions. Open each app's websi
 - **Authors and contributors:** applications included in this repository are developed and maintained by their respective authors, teams, and organizations. Credits are listed below and updated as new projects are added:
   - **ArtCraft Team:** ArtCraft applications and contributions.
   - **Tangency Labs:** SolidCraft.
+  - **emmertex:** Cromaforge.
 - **Licenses:** each application is distributed under its respective license. Please refer to the original project's repository for license information and applicable terms.
 - **Names, logos and icons:** belong to their respective authors, developers, organizations, or rights holders.
 - **Third-party trademarks:** product names and trademarks belong to their respective owners. They are mentioned solely for identification and descriptive purposes. This repository is not affiliated with or endorsed by these companies unless explicitly stated.
