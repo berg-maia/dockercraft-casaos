@@ -55,7 +55,9 @@ x-casaos:
     uk_UA: "Малюйте PBR-матеріали безпосередньо на моделях за допомогою шарів і масок, запікайте карти сітки, використовуйте їх для керування розумними матеріалами та експортуйте текстури для будь-якого рушія."
   icon: https://raw.githubusercontent.com/storytold/texturecraft/refs/heads/main/assets/app-icon/texturecraft.svg
   screenshot_link:
-    - https://raw.githubusercontent.com/storytold/texturecraft/refs/heads/main/assets/app-icon/texturecraft.svg
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TextureCraft/screenshot-1.png
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TextureCraft/screenshot-2.png
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TextureCraft/screenshot-3.png
   website: https://getartcraft.com/apps/texturecraft
   repo: https://github.com/storytold/texturecraft
   support: https://github.com/storytold/texturecraft/issues
