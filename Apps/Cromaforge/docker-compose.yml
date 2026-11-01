@@ -1,0 +1,68 @@
+name: cromaforge
+
+services:
+  cromaforge:
+    image: ghcr.io/berg-maia/cromaforge-web:0.17.0
+    container_name: cromaforge
+    restart: unless-stopped
+    ports:
+      - "8315:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.cromaforge
+  architectures:
+    - amd64
+    - arm64
+  main: cromaforge
+  author: emmertex
+  developer: emmertex
+  category: Media
+  title:
+    en_US: Cromaforge
+  tagline:
+    en_US: "Photo library and raw development"
+    zh_CN: "照片库与 RAW 处理"
+    ar_SA: "مكتبة الصور وتحميض RAW"
+    de_DE: "Fotobibliothek und RAW-Entwicklung"
+    es_ES: "Biblioteca de fotos y revelado RAW"
+    fr_FR: "Photothèque et développement RAW"
+    hu_HU: "Fotótár és RAW-előhívás"
+    it_IT: "Libreria foto e sviluppo RAW"
+    ru_RU: "Фотобиблиотека и обработка RAW"
+    pl_PL: "Biblioteka zdjęć i wywoływanie RAW"
+    pt_BR: "Biblioteca de fotos e revelação RAW"
+    sv_SE: "Fotobibliotek och RAW-framkallning"
+    uk_UA: "Фотобібліотека та обробка RAW"
+  description:
+    en_US: "Photo library and raw development; an open-source, clean-room reimplementation of Adobe Lightroom Classic, rebuilt in pure Rust."
+    zh_CN: "照片库与 RAW 处理；Adobe Lightroom Classic 的开源净室（clean-room）重新实现，完全使用纯 Rust 重写。"
+    ar_SA: "مكتبة الصور وتحميض RAW؛ إعادة تنفيذ مفتوحة المصدر بأسلوب «clean-room» لبرنامج Adobe Lightroom Classic، أُعيد بناؤها بلغة Rust الخالصة."
+    de_DE: "Fotobibliothek und RAW-Entwicklung; eine quelloffene Clean-Room-Neuimplementierung von Adobe Lightroom Classic, komplett in reinem Rust neu aufgebaut."
+    es_ES: "Biblioteca de fotos y revelado RAW; una reimplementación de código abierto, tipo «clean-room», de Adobe Lightroom Classic, reconstruida en Rust puro."
+    fr_FR: "Photothèque et développement RAW ; une réimplémentation open source « clean-room » d'Adobe Lightroom Classic, reconstruite en Rust pur."
+    hu_HU: "Fotótár és RAW-előhívás; Adobe Lightroom Classic nyílt forráskódú, „clean-room” újraimplementációja, tiszta Rustban újraépítve."
+    it_IT: "Libreria foto e sviluppo RAW; una reimplementazione open source «clean-room» di Adobe Lightroom Classic, ricostruita in puro Rust."
+    ru_RU: "Фотобиблиотека и обработка RAW; открытая clean-room-реимплементация Adobe Lightroom Classic, заново написанная на чистом Rust."
+    pl_PL: "Biblioteka zdjęć i wywoływanie RAW; otwartoźródłowa reimplementacja „clean-room” programu Adobe Lightroom Classic, napisana od nowa w czystym Rust."
+    pt_BR: "Biblioteca de fotos e revelação RAW; uma reimplementação open source, em clean-room, do Adobe Lightroom Classic, reconstruída em Rust puro."
+    sv_SE: "Fotobibliotek och RAW-framkallning; en open source-reimplementering av Adobe Lightroom Classic enligt clean-room-metoden, omskriven i rent Rust."
+    uk_UA: "Фотобібліотека та обробка RAW; відкрита clean-room-реімплементація Adobe Lightroom Classic, заново написана на чистому Rust."
+  icon: https://raw.githubusercontent.com/emmertex/chromaforge/refs/heads/main/assets/app-icon/hicolor/scalable/apps/app.svg
+  screenshot_link:
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Cromaforge/screenshot-1.jpg
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Cromaforge/screenshot-2.jpg
+     - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/Cromaforge/screenshot-3.jpg
+  website: https://github.com/emmertex/chromaforge
+  repo: https://github.com/emmertex/chromaforge
+  support: https://github.com/emmertex/chromaforge/issues
+  version: "0.17.0"
+  update_at: "2026-11-01"
+  index: /
+  port_map: "8315"
+  scheme: http
