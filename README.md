@@ -21,6 +21,14 @@ An unofficial [CasaOS](https://casaos.zimaspace.com/) app store for the **Craft*
 
 Each app uses its own host port, so all of them can run side by side.
 
+> **Note:** If newly added applications do not appear in the CasaOS App Store, even after removing and re-adding the repository, try restarting the CasaOS App Management service.
+>
+> **Via SSH:**
+> Connect to your CasaOS device via SSH and run:
+> ```bash
+> sudo systemctl restart casaos-app-management
+> `
+
 ## Apps
 
 | App | What it is | Release | Official Links | Port |
