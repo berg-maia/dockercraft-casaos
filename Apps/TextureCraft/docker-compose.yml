@@ -1,0 +1,66 @@
+name: texturecraft
+
+services:
+  texturecraft:
+    image: ghcr.io/berg-maia/texturecraft-web:latest
+    container_name: texturecraft
+    restart: unless-stopped
+    ports:
+      - "8779:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.texturecraft
+  architectures:
+    - amd64
+    - arm64
+  main: texturecraft
+  author: Storytold
+  developer: Storytold
+  category: Productivity
+  title:
+    en_US: TextureCraft
+  tagline:
+    en_US: "3D texture painting"
+    zh_CN: "3D 纹理绘制"
+    ar_SA: "رسم الخامات ثلاثية الأبعاد"
+    de_DE: "3D-Texturbemalung"
+    es_ES: "Pintura de texturas 3D"
+    fr_FR: "Peinture de textures 3D"
+    hu_HU: "3D textúrafestés"
+    it_IT: "Pittura di texture 3D"
+    ru_RU: "Рисование 3D-текстур"
+    pl_PL: "Malowanie tekstur 3D"
+    pt_BR: "Pintura de texturas 3D"
+    sv_SE: "3D-texturmålning"
+    uk_UA: "Малювання 3D-текстур"
+  description:
+    en_US: "Paint PBR materials straight onto your models in layers with masks, bake mesh maps, drive smart materials from them and export textures for any engine."
+    zh_CN: "直接在模型上分层绘制 PBR 材质并使用蒙版，烘焙网格贴图，基于这些贴图驱动智能材质，并导出适用于任何引擎的纹理。"
+    ar_SA: "ارسم مواد PBR مباشرة على نماذجك باستخدام طبقات وأقنعة، واخبز خرائط الشبكة، واستخدمها للتحكم في المواد الذكية، ثم صدّر الخامات لأي محرك."
+    de_DE: "Male PBR-Materialien direkt auf deine Modelle – mit Ebenen und Masken. Backe Mesh-Maps, steuere damit intelligente Materialien und exportiere Texturen für jede Engine."
+    es_ES: "Pinta materiales PBR directamente sobre tus modelos con capas y máscaras, hornea mapas de malla, utilízalos para controlar materiales inteligentes y exporta texturas para cualquier motor."
+    fr_FR: "Peignez des matériaux PBR directement sur vos modèles avec des calques et des masques, cuisez des cartes de maillage, utilisez-les pour piloter des matériaux intelligents et exportez des textures pour n'importe quel moteur."
+    hu_HU: "Fess PBR-anyagokat közvetlenül a modelljeidre rétegekkel és maszkokkal, süss hálótérképeket, használd őket intelligens anyagok vezérlésére, és exportálj textúrákat bármelyik motorhoz."
+    it_IT: "Dipingi materiali PBR direttamente sui tuoi modelli con livelli e maschere, genera mappe della mesh, usale per controllare materiali intelligenti ed esporta texture per qualsiasi motore."
+    ru_RU: "Наносите PBR-материалы непосредственно на модели с помощью слоёв и масок, запекайте карты сетки, используйте их для управления умными материалами и экспортируйте текстуры для любого движка."
+    pl_PL: "Maluj materiały PBR bezpośrednio na modelach za pomocą warstw i masek, wypiekaj mapy siatki, wykorzystuj je do sterowania inteligentnymi materiałami i eksportuj tekstury do dowolnego silnika."
+    pt_BR: "Pinte materiais PBR diretamente nos seus modelos usando camadas e máscaras, gere mapas de malha por baking, utilize-os para controlar materiais inteligentes e exporte texturas para qualquer engine."
+    sv_SE: "Måla PBR-material direkt på dina modeller med lager och masker, baka mesh-kartor, använd dem för att styra smarta material och exportera texturer för valfri spelmotor."
+    uk_UA: "Малюйте PBR-матеріали безпосередньо на моделях за допомогою шарів і масок, запікайте карти сітки, використовуйте їх для керування розумними матеріалами та експортуйте текстури для будь-якого рушія."
+  icon: https://raw.githubusercontent.com/storytold/texturecraft/refs/heads/main/assets/app-icon/texturecraft.svg
+  screenshot_link:
+    - https://raw.githubusercontent.com/storytold/texturecraft/refs/heads/main/assets/app-icon/texturecraft.svg
+  website: https://getartcraft.com/apps/texturecraft
+  repo: https://github.com/storytold/texturecraft
+  support: https://github.com/storytold/texturecraft/issues
+  version: "1.0.0"
+  update_at: "2026-11-01"
+  index: /
+  port_map: "8779"
+  scheme: http
