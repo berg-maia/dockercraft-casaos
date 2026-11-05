@@ -2,13 +2,6 @@
 
 An unofficial [CasaOS](https://casaos.zimaspace.com/) | [ReCasaOS](https://github.com/ReCasaOS/CasaOS) app store for the **Craft** applications.
 
-> **Application credits:**
-> - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
-> - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and its contributors.
-> - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
->
-> This repository only packages their work for CasaOS | ReCasaOS. It is not an official repository.
-
 ## Install
 
 1. Open the CasaOS dashboard and go to **App Store**.
@@ -51,20 +44,21 @@ Each app uses its own host port, so all of them can run side by side.
 | <div align="center"><img src="https://raw.githubusercontent.com/storytold/texturecraft/refs/heads/main/assets/app-icon/texturecraft.svg" width="40" height="40"><br><b>TextureCraft</b></div> | Paint PBR materials straight onto your models in layers with masks, bake mesh maps, drive smart materials from them and export textures for any engine | <div align="center">![version](https://img.shields.io/github/v/release/storytold/texturecraft?label=&color=blue)<br>![date](https://img.shields.io/github/release-date/storytold/texturecraft?label=&color=lightgrey)</div> | [![Website](https://img.shields.io/badge/Site-Visit-2563eb?style=flat&logo=googlechrome&logoColor=white)](https://getartcraft.com/apps/texturecraft) [![GitHub](https://img.shields.io/badge/Source-GitHub-24292f?style=flat&logo=github&logoColor=white)](https://github.com/storytold/texturecraft) | 8779 |
 | <div align="center"><img src="https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/SolidCraft/icon.svg" width="40" height="40"><br><b>SolidCraft</b></div> | Create sketches, set dimensions, and build 3D parts with an editable feature history. Work in the editor or connect an AI agent through MCP. | <div align="center">![version](https://img.shields.io/github/v/release/tangency-labs/solidcraft?label=&color=blue)<br>![date](https://img.shields.io/github/release-date/tangency-labs/solidcraft?label=&color=lightgrey)</div> | [![Website](https://img.shields.io/badge/Site-Visit-2563eb?style=flat&logo=googlechrome&logoColor=white)](https://solidcraft.io) [![GitHub](https://img.shields.io/badge/Source-GitHub-24292f?style=flat&logo=github&logoColor=white)](https://github.com/tangency-labs/solidcraft) | 8314 |
 | <div align="center"><img src="https://raw.githubusercontent.com/emmertex/chromaforge/refs/heads/main/assets/app-icon/hicolor/scalable/apps/app.svg" width="40" height="40"><br><b>Cromaforge</b></div> | A Lightroom Classic-style photo library and non-destructive raw developer | <div align="center">![version](https://img.shields.io/github/v/release/emmertex/chromaforge?label=&color=blue)<br>![date](https://img.shields.io/github/release-date/emmertex/chromaforge?label=&color=lightgrey)</div> | [![GitHub](https://img.shields.io/badge/Source-GitHub-24292f?style=flat&logo=github&logoColor=white)](https://github.com/emmertex/chromaforge) | 8315 |
-
-
+| <div align="center"><img src="https://raw.githubusercontent.com/tracedraw/tracedraw/refs/heads/main/assets/icon/tracedraw.ico" width="40" height="40"><br><b>TraceDraw</b></div> | Vector illustration, page layout and print | <div align="center">![version](https://img.shields.io/github/v/release/tracedraw/tracedraw?label=&color=blue)<br>![date](https://img.shields.io/github/release-date/tracedraw/tracedraw?label=&color=lightgrey)</div> | [![GitHub](https://img.shields.io/badge/Source-GitHub-24292f?style=flat&logo=github&logoColor=white)](https://github.com/tracedraw/tracedraw) | 8316 |
 
 App descriptions follow the official project descriptions. Open each app's website or repository for its full documentation.
 
 ## Credits and rights
 
 - **Authors and contributors:** applications included in this repository are developed and maintained by their respective authors, teams, and organizations. Credits are listed below and updated as new projects are added:
-  - **ArtCraft Team:** ArtCraft applications and contributions.
-  - **Tangency Labs:** SolidCraft.
-  - **emmertex:** Cromaforge.
+  - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
+  - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and their respective contributors.
+  - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
+  - **TraceDraw:** Developed by [tracedraw](https://github.com/tracedraw/tracedraw) and their respective contributors.
 - **Licenses:** each application is distributed under its respective license. Please refer to the original project's repository for license information and applicable terms.
 - **Names, logos and icons:** belong to their respective authors, developers, organizations, or rights holders.
 - **Third-party trademarks:** product names and trademarks belong to their respective owners. They are mentioned solely for identification and descriptive purposes. This repository is not affiliated with or endorsed by these companies unless explicitly stated.
+- This repository only packages the original projects' official web releases as Docker images. It is an independent community project and is not officially affiliated with, endorsed by, or maintained by ArtCraft, Tangency Labs, or any of the respective application developers.
 
 ## Issues
 
