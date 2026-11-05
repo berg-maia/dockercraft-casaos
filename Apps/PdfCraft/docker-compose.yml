@@ -2,7 +2,7 @@ name: pdfcraft
 
 services:
   pdfcraft:
-    image: ghcr.io/berg-maia/pdfcraft-web:0.18.1
+    image: ghcr.io/berg-maia/pdfcraft-web:0.18.2
     container_name: pdfcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/pdfcraft
   repo: https://github.com/storytold/pdfcraft
   support: https://github.com/storytold/pdfcraft/issues
-  version: "0.18.1"
-  update_at: "2026-11-04"
+  version: "0.18.2"
+  update_at: "2026-11-05"
   index: /
   port_map: "8769"
   scheme: http

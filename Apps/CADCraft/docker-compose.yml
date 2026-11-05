@@ -2,7 +2,7 @@ name: cadcraft
 
 services:
   cadcraft:
-    image: ghcr.io/berg-maia/cadcraft-web:0.17.0
+    image: ghcr.io/berg-maia/cadcraft-web:0.17.1
     container_name: cadcraft
     restart: unless-stopped
     ports:
@@ -61,8 +61,8 @@ x-casaos:
   website: https://getartcraft.com/apps/cadcraft
   repo: https://github.com/storytold/cadcraft
   support: https://github.com/storytold/cadcraft/issues
-  version: "0.17.0"
-  update_at: "2026-11-03"
+  version: "0.17.1"
+  update_at: "2026-11-05"
   index: /
   port_map: "8776"
   scheme: http
