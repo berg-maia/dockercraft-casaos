@@ -2,7 +2,7 @@ name: craft-anything
 
 services:
   craft-anything:
-    image: ghcr.io/berg-maia/craft-anything-web:0.4.0
+    image: ghcr.io/berg-maia/craft-anything-web:0.5.0
     container_name: craft-anything
     restart: unless-stopped
     ports:
@@ -61,7 +61,7 @@ x-casaos:
   website: https://getartcraft.com/apps/craft-anything
   repo: https://github.com/storytold/craft-anything
   support: https://github.com/storytold/craft-anything/issues
-  version: "0.4.0"
+  version: "0.5.0"
   update_at: "2026-11-06"
   index: /
   port_map: "8778"
