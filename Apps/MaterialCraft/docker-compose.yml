@@ -1,0 +1,68 @@
+name: materialcraft
+
+services:
+  materialcraft:
+    image: ghcr.io/berg-maia/materialcraft-web:0.4.0
+    container_name: materialcraft
+    restart: unless-stopped
+    ports:
+      - "8780:80"
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.materialcraft
+  architectures:
+    - amd64
+    - arm64
+  main: materialcraft
+  author: ArtCraft
+  developer: ArtCraft
+  category: Media
+  title:
+    en_US: MaterialCraft
+  tagline:
+    en_US: "Procedural materials, node by node."
+    zh_CN: "逐节点构建程序化材质。"
+    ar_SA: "مواد إجرائية، عقدة تلو الأخرى."
+    de_DE: "Prozedurale Materialien, Knoten für Knoten."
+    es_ES: "Materiales procedurales, nodo a nodo."
+    fr_FR: "Matériaux procéduraux, nœud par nœud."
+    hu_HU: "Procedurális anyagok, csomópontról csomópontra."
+    it_IT: "Materiali procedurali, nodo dopo nodo."
+    ru_RU: "Процедурные материалы, узел за узлом."
+    pl_PL: "Materiały proceduralne, węzeł po węźle."
+    pt_BR: "Materiais procedurais, nó por nó."
+    sv_SE: "Procedurala material, nod för nod."
+    uk_UA: "Процедурні матеріали, вузол за вузлом."
+  description:
+    en_US: "Build tileable PBR materials from noises, patterns and filters in a node graph, watch them update live in 2D and on a 3D model, and export the maps for any engine."
+    zh_CN: "在节点图中使用噪波、图案和滤镜创建可平铺的 PBR 材质，实时查看它们在 2D 视图和 3D 模型上的效果，并导出适用于任何引擎的贴图。"
+    ar_SA: "أنشئ مواد PBR قابلة للتكرار باستخدام الضوضاء والأنماط والمرشحات ضمن مخطط عقد، وشاهد تحديثها مباشرةً في العرض ثنائي الأبعاد وعلى نموذج ثلاثي الأبعاد، ثم صدّر الخرائط لأي محرك."
+    de_DE: "Erstelle nahtlos kachelbare PBR-Materialien aus Rauschen, Mustern und Filtern in einem Knotendiagramm, verfolge ihre Live-Aktualisierung in 2D und auf einem 3D-Modell und exportiere die Maps für jede Engine."
+    es_ES: "Crea materiales PBR repetibles a partir de ruidos, patrones y filtros en un gráfico de nodos, observa cómo se actualizan en tiempo real en 2D y sobre un modelo 3D, y exporta los mapas para cualquier motor."
+    fr_FR: "Créez des matériaux PBR répétables à partir de bruits, motifs et filtres dans un graphe de nœuds, visualisez leur mise à jour en temps réel en 2D et sur un modèle 3D, puis exportez les cartes pour n'importe quel moteur."
+    hu_HU: "Készíts csempézhető PBR-anyagokat zajokból, mintákból és szűrőkből egy csomópontgráfban, figyeld a valós idejű frissülésüket 2D-ben és egy 3D modellen, majd exportáld a térképeket bármelyik motorhoz."
+    it_IT: "Crea materiali PBR ripetibili da rumori, pattern e filtri in un grafo di nodi, osservane l'aggiornamento in tempo reale in 2D e su un modello 3D ed esporta le mappe per qualsiasi motore."
+    ru_RU: "Создавайте бесшовно повторяющиеся PBR-материалы из шумов, узоров и фильтров в графе узлов, наблюдайте за их обновлением в реальном времени в 2D и на 3D-модели, а затем экспортируйте карты для любого движка."
+    pl_PL: "Twórz kafelkowalne materiały PBR z szumów, wzorów i filtrów w grafie węzłów, obserwuj ich aktualizację na żywo w 2D i na modelu 3D, a następnie eksportuj mapy do dowolnego silnika."
+    pt_BR: "Crie materiais PBR contínuos a partir de ruídos, padrões e filtros em um grafo de nós, acompanhe as atualizações em tempo real em 2D e em um modelo 3D e exporte os mapas para qualquer engine."
+    sv_SE: "Skapa sömlöst upprepningsbara PBR-material av brus, mönster och filter i ett noddiagram, se dem uppdateras i realtid i 2D och på en 3D-modell och exportera kartorna för valfri spelmotor."
+    uk_UA: "Створюйте безшовні тайлові PBR-матеріали з шумів, візерунків і фільтрів у графі вузлів, спостерігайте за їх оновленням у реальному часі у 2D та на 3D-моделі й експортуйте карти для будь-якого рушія."
+  icon: https://raw.githubusercontent.com/storytold/materialcraft/refs/heads/main/assets/app-icon/materialcraft.svg
+  screenshot_link:
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/MaterialCraft/screenshot-1.webp
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/MaterialCraft/screenshot-2.webp
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/MaterialCraft/screenshot-3.webp
+  website: https://getartcraft.com/apps/materialcraft
+  repo: https://github.com/storytold/materialcraft
+  support: https://github.com/storytold/materialcraft/issues
+  version: "0.4.0"
+  update_at: "2026-11-06"
+  index: /
+  port_map: "8780"
+  scheme: http
