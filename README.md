@@ -51,10 +51,10 @@ App descriptions follow the official project descriptions. Open each app's websi
 ## Credits and rights
 
 - **Authors and contributors:** applications included in this repository are developed and maintained by their respective authors, teams, and organizations. Credits are listed below and updated as new projects are added:
-  - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
-  - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and their respective contributors.
-  - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
-  - **TraceDraw:** Developed by [tracedraw](https://github.com/tracedraw/tracedraw) and their respective contributors.
+  > - **ArtCraft applications:** Developed by the [ArtCraft Team](https://getartcraft.com) and their respective contributors.
+  > - **SolidCraft:** Developed by [Tangency Labs](https://solidcraft.io) and their respective contributors.
+  > - **Cromaforge:** Developed by [emmertex](https://github.com/emmertex/chromaforge) and their respective contributors.
+  > - **TraceDraw:** Developed by [tracedraw](https://github.com/tracedraw/tracedraw) and their respective contributors.
 - **Licenses:** each application is distributed under its respective license. Please refer to the original project's repository for license information and applicable terms.
 - **Names, logos and icons:** belong to their respective authors, developers, organizations, or rights holders.
 - **Third-party trademarks:** product names and trademarks belong to their respective owners. They are mentioned solely for identification and descriptive purposes. This repository is not affiliated with or endorsed by these companies unless explicitly stated.
