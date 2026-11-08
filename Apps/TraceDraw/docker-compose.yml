@@ -64,9 +64,9 @@ x-casaos:
     uk_UA: "Сторінки та шари, криві та вузли, художній текст і текст абзаців, заливки та контури, ефекти в реальному часі, символи, PDF/X і справжні файли .cdr"
   icon: https://raw.githubusercontent.com/tracedraw/tracedraw/refs/heads/main/assets/icon/tracedraw.ico
   screenshot_link:
-    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-1.webp
-    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-2.webp
-    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-3.webp
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-1.jpg
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-2.jpg
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-3.jpg
   website: https://getartcraft.com/apps/tracedraw
   repo: https://github.com/tracedraw/tracedraw
   support: https://github.com/tracedraw/tracedraw/issues
