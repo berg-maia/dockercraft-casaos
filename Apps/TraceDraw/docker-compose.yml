@@ -8,7 +8,7 @@ services:
     ports:
       - "8316:80"
     volumes:
-      - /DATA/AppData/ArtCraft/$AppID/fonts:/usr/share/nginx/html/fonts
+      - /DATA/AppData/$AppID/fonts:/usr/share/nginx/html/fonts
     command:
       - sh
       - -c
