@@ -1,0 +1,77 @@
+name: tracedraw
+
+services:
+  tracedraw:
+    image: ghcr.io/berg-maia/tracedraw-web:0.21.0
+    container_name: tracedraw
+    restart: unless-stopped
+    ports:
+      - "8765:80"
+    volumes:
+      - /DATA/AppData/ArtCraft/$AppID/fonts:/usr/share/nginx/html/fonts
+    command:
+      - sh
+      - -c
+      - |
+        wget -qO /tmp/fonts-manifest.sh https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/scripts/fonts-manifest.sh && mv /tmp/fonts-manifest.sh /opt/fonts-manifest.sh || echo "could not download fonts-manifest.sh"
+        [ -f /opt/fonts-json.sh ] && sh /opt/fonts-json.sh &
+        exec nginx -g 'daemon off;'
+    x-casaos:
+      ports:
+        - container: "80"
+          description:
+            en_US: "Web UI"
+            pt_BR: "Interface web"
+
+x-casaos:
+  id: io.github.berg-maia.tracedraw
+  architectures:
+    - amd64
+    - arm64
+  main: tracedraw
+  author: TraceDraw
+  developer: TraceDraw
+  category: Media
+  title:
+    en_US: TraceDraw
+  tagline:
+    en_US: "Vector illustration, page layout and print"
+    zh_CN: "矢量插画、页面排版与印刷"
+    ar_SA: "الرسم التوضيحي المتجهي وتخطيط الصفحات والطباعة"
+    de_DE: "Vektorillustration, Seitenlayout und Druck"
+    es_ES: "Ilustración vectorial, diseño de páginas e impresión"
+    fr_FR: "Illustration vectorielle, mise en page et impression"
+    hu_HU: "Vektoros illusztráció, oldalelrendezés és nyomtatás"
+    it_IT: "Illustrazione vettoriale, impaginazione e stampa"
+    ru_RU: "Векторная иллюстрация, макетирование страниц и печать"
+    pl_PL: "Ilustracja wektorowa, układ stron i druk"
+    pt_BR: "Ilustração vetorial, diagramação e impressão"
+    sv_SE: "Vektorillustration, sidlayout och tryck"
+    uk_UA: "Векторна ілюстрація, компонування сторінок і друк"
+  description:
+    en_US: "Pages and layers, curves and nodes, artistic and paragraph text, fills and outlines, live effects, symbols, PDF/X and real .cdr files"
+    zh_CN: "页面与图层、曲线与节点、艺术字与段落文本、填充与轮廓、实时效果、符号、PDF/X 以及真正的 .cdr 文件"
+    ar_SA: "الصفحات والطبقات، والمنحنيات والعُقد، والنصوص الفنية ونصوص الفقرات، والتعبئات والمخططات الخارجية، والتأثيرات المباشرة، والرموز، وملفات PDF/X وملفات .cdr الحقيقية"
+    de_DE: "Seiten und Ebenen, Kurven und Knoten, künstlerischer Text und Absatztext, Füllungen und Konturen, Live-Effekte, Symbole, PDF/X und echte .cdr-Dateien"
+    es_ES: "Páginas y capas, curvas y nodos, texto artístico y de párrafo, rellenos y contornos, efectos en vivo, símbolos, PDF/X y archivos .cdr reales"
+    fr_FR: "Pages et calques, courbes et nœuds, texte artistique et texte de paragraphe, remplissages et contours, effets en direct, symboles, PDF/X et véritables fichiers .cdr"
+    hu_HU: "Oldalak és rétegek, görbék és csomópontok, művészi és bekezdésszövegek, kitöltések és körvonalak, élő effektusok, szimbólumok, PDF/X és valódi .cdr fájlok"
+    it_IT: "Pagine e livelli, curve e nodi, testo artistico e paragrafi, riempimenti e contorni, effetti in tempo reale, simboli, PDF/X e veri file .cdr"
+    ru_RU: "Страницы и слои, кривые и узлы, художественный и абзацный текст, заливки и контуры, эффекты в реальном времени, символы, PDF/X и настоящие файлы .cdr"
+    pl_PL: "Strony i warstwy, krzywe i węzły, tekst artystyczny i akapitowy, wypełnienia i kontury, efekty na żywo, symbole, PDF/X oraz prawdziwe pliki .cdr"
+    pt_BR: "Páginas e camadas, curvas e nós, texto artístico e de parágrafo, preenchimentos e contornos, efeitos em tempo real, símbolos, PDF/X e arquivos .cdr reais"
+    sv_SE: "Sidor och lager, kurvor och noder, konstnärlig text och brödtext, fyllningar och konturer, liveeffekter, symboler, PDF/X och äkta .cdr-filer"
+    uk_UA: "Сторінки та шари, криві та вузли, художній текст і текст абзаців, заливки та контури, ефекти в реальному часі, символи, PDF/X і справжні файли .cdr"
+  icon: https://raw.githubusercontent.com/tracedraw/tracedraw/refs/heads/main/assets/icon/tracedraw.ico
+  screenshot_link:
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-1.webp
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-2.webp
+    - https://raw.githubusercontent.com/berg-maia/dockercraft-casaos/main/Apps/TraceDraw/screenshot-3.webp
+  website: https://getartcraft.com/apps/tracedraw
+  repo: https://github.com/tracedraw/tracedraw
+  support: https://github.com/tracedraw/tracedraw/issues
+  version: "0.21.0"
+  update_at: "2026-11-06"
+  index: /
+  port_map: "8765"
+  scheme: http
