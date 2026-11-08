@@ -6,7 +6,7 @@ services:
     container_name: tracedraw
     restart: unless-stopped
     ports:
-      - "8765:80"
+      - "8316:80"
     volumes:
       - /DATA/AppData/ArtCraft/$AppID/fonts:/usr/share/nginx/html/fonts
     command:
@@ -73,5 +73,5 @@ x-casaos:
   version: "0.21.0"
   update_at: "2026-11-06"
   index: /
-  port_map: "8765"
+  port_map: "8316"
   scheme: http
