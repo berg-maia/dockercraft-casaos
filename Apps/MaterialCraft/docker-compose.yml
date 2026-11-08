@@ -2,7 +2,7 @@ name: materialcraft
 
 services:
   materialcraft:
-    image: ghcr.io/berg-maia/materialcraft-web:0.4.0
+    image: ghcr.io/berg-maia/materialcraft-web:0.2.0
     container_name: materialcraft
     restart: unless-stopped
     ports:
@@ -61,7 +61,7 @@ x-casaos:
   website: https://getartcraft.com/apps/materialcraft
   repo: https://github.com/storytold/materialcraft
   support: https://github.com/storytold/materialcraft/issues
-  version: "0.4.0"
+  version: "0.2.0"
   update_at: "2026-11-06"
   index: /
   port_map: "8780"
