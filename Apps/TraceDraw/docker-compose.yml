@@ -2,7 +2,7 @@ name: tracedraw
 
 services:
   tracedraw:
-    image: ghcr.io/berg-maia/tracedraw-web:0.42.1
+    image: ghcr.io/berg-maia/tracedraw-web:0.43.0
     container_name: tracedraw
     restart: unless-stopped
     ports:
@@ -70,7 +70,7 @@ x-casaos:
   website: https://getartcraft.com/apps/tracedraw
   repo: https://github.com/tracedraw/tracedraw
   support: https://github.com/tracedraw/tracedraw/issues
-  version: "0.42.1"
+  version: "0.43.0"
   update_at: "2026-11-08"
   index: /
   port_map: "8316"
